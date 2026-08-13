@@ -158,6 +158,16 @@
     <a href="https://zmk.dev/docs/features/studio" target="_blank" rel="noopener">使い方ドキュメント</a>）。<br>
     現在の配置を眺めたり、位置#番号つきの変更メモを作るには
     <a href="keymap/cornix-report.html" target="_blank" rel="noopener">配置変更メモ（cornix-report）</a> をどうぞ。</p>
+    <details style="margin-top:8px">
+      <summary>「Failed to connect to the chosen device」と出るとき</summary>
+      <p>よくある原因は4つ:<br>
+      ① <b>ポートの選び間違い</b> — このファームはシリアルポートを2つ持ちます（Studio用と本ツールの設定コンソール用）。
+      選択画面に2つ出たら<b>もう片方</b>を選んでください。<br>
+      ② <b>本ツールがUSB接続中</b> — このページのUSB直結モードがポートを掴んでいるとStudioから開けません。
+      切断（またはタブを閉じる）してから接続してください。逆にStudio接続中は本ツールが繋がりません。<br>
+      ③ <b>純正ファームのまま</b> — 純正（RMK/Vial）はZMK Studio非対応です。先に本プロジェクトのUF2を書き込んでください。<br>
+      ④ <b>右手側を接続している</b> — Studioが繋がるのは左手側（central）だけです。</p>
+    </details>
   </div>
 
   <div class="card">
