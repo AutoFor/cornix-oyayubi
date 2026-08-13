@@ -35,9 +35,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh release delete latest-build -R "$GITHUB_REPOSITORY" --cleanup-tag -y || true
+          # --target <SHA> はActionsトークンだと403になる (cli/cli#9514) ため指定しない
           gh release create latest-build artifacts/*.uf2 \
             -R "$GITHUB_REPOSITORY" \
-            --target "$GITHUB_SHA" \
             --latest \
             --title "最新ビルド (main)" \
             --notes "main の最新コミット ${GITHUB_SHA} からの自動ビルド。通常(ドングルなし)構成で使うのは cornix_left_default_nosd.uf2 (左手) と cornix_right_nosd.uf2 (右手) の2つだけです。導入手順は README の Quick start 参照。"
