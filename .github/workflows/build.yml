@@ -15,3 +15,29 @@ on:
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+
+  # main のビルド成功ごとに latest-build リリースを個別UF2付きで更新する。
+  # READMEの releases/latest/download/<name>.uf2 直リンクはこのリリースを指す。
+  release:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download built firmware
+        uses: actions/download-artifact@v4
+        with:
+          name: firmware
+          path: artifacts
+      - name: Update latest-build release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete latest-build -R "$GITHUB_REPOSITORY" --cleanup-tag -y || true
+          gh release create latest-build artifacts/*.uf2 \
+            -R "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --latest \
+            --title "最新ビルド (main)" \
+            --notes "main の最新コミット ${GITHUB_SHA} からの自動ビルド。通常(ドングルなし)構成で使うのは cornix_left_default_nosd.uf2 (左手) と cornix_right_nosd.uf2 (右手) の2つだけです。導入手順は README の Quick start 参照。"

@@ -9,7 +9,7 @@ Works on Windows and macOS.
 
 ## Quick start / はじめかた
 
-**必要なもの**: Cornix 本体（左右）/ USB-C ケーブル / GitHub アカウント（無料。ビルド済みファームのダウンロードに必要）/ Chrome または Edge
+**必要なもの**: Cornix 本体（左右）/ USB-C ケーブル / Chrome または Edge（設定変更時のみ）
 
 判定方式・親指キー・キー配列は**あとからブラウザだけでいくらでも変えられる**ので、
 まずは何も変更せず、ビルド済みファームをそのまま焼いて動かすのがおすすめです。
@@ -17,13 +17,14 @@ fork やビルド環境の構築は不要です（fork が必要になるケー�
 
 ### ステップ1: ファームウェア(UF2)をダウンロードする
 
-1. GitHub にログインした状態で、このリポジトリの **[Actions タブ](../../actions)** を開く
-2. 一覧の一番上にある緑✓の実行（Build ZMK firmware）をクリック
-3. ページ下部の **Artifacts** にある **firmware** をクリックしてダウンロード
-4. `firmware.zip` を展開する。中に複数の `.uf2` が入っているが、通常（ドングルなし）構成で使うのは2つだけ:
-   - **左手用**: `cornix_left_default_nosd.uf2`
-   - **右手用**: `cornix_right_nosd.uf2`
-   - （`dongle` / `debug` / `reset` を含むファイルは通常は使いません）
+以下の2ファイルをダウンロードするだけです（GitHub ログイン不要・zip 展開不要）:
+
+- **左手用**: [cornix_left_default_nosd.uf2](../../releases/latest/download/cornix_left_default_nosd.uf2)
+- **右手用**: [cornix_right_nosd.uf2](../../releases/latest/download/cornix_right_nosd.uf2)
+
+（main が更新されるたびに CI が **[Releases](../../releases/latest)** を自動更新します。Releases には
+他構成用の `.uf2`（`dongle` / `debug` / `reset` 入りの名前）も並んでいますが、通常（ドングルなし）構成で
+使うのは上記2つだけです）
 
 ### ステップ2: キーボードに書き込む（左右それぞれ・初回のみ）
 
@@ -79,8 +80,8 @@ fork してビルドする手順:
    「I understand my workflows, go ahead and enable them」を押して有効化する
    （**これを忘れるとビルドが一切走りません**）
 3. fork 内の `config/cornix.keymap` を開き、鉛筆アイコン（Edit）で冒頭の `#define` を編集 → **Commit changes**
-4. コミットすると自動でビルドが始まります。以降はステップ1〜2と同じ
-   （自分の fork の Actions から UF2 をダウンロードして書き込み）
+4. コミットすると自動でビルドが始まり、完了すると**自分の fork の Releases** に UF2 が並びます。
+   以降はステップ1〜2と同じ（ダウンロード元を自分の fork の Releases に読み替え）
 
 ## Configure / 設定
 
