@@ -9,38 +9,84 @@ Works on Windows and macOS.
 
 ## Quick start / はじめかた
 
-**初回だけ**、GitHub上でキーマップを決めてファームを1回焼く必要があります。それ以降の日常的な調整
-（判定方式・親指キーの割り当て・キー配列そのもの）は **ブラウザ＋USBケーブルだけ** で完結し、
-CLIツールやビルド環境のインストールは一切不要です（Windows/macOS共通）。
+**必要なもの**: Cornix 本体（左右）/ USB-C ケーブル / GitHub アカウント（無料。ビルド済みファームのダウンロードに必要）/ Chrome または Edge
 
-1. **Fork this repo.** 自分のアカウントに fork する（あなた専用の設定リポジトリになります）。
-2. **Edit your settings.** `config/cornix.keymap` の冒頭 `#define` を自分に合わせて変える:
-   - 親指シフトキー `NICOLA_LTHUMB` / `NICOLA_RTHUMB`
-   - 判定窓 `NICOLA_TIMEOUT_MS`(ms方式) / 判定範囲 `NICOLA_RANGE_PCT`(%方式)
-   - **IME連動キー `NICOLA_IME_ON_KEY` / `NICOLA_IME_OFF_KEY`（★OS別。同ファイルのコメント表から自分のOSの行を選ぶ）**
-3. **CI builds your firmware.** push すると GitHub Actions が自動でファーム(UF2)をビルドします
-   （Actions タブ → 成功したビルドの Artifacts に UF2 をダウンロード。gh CLI等のツールは不要、ブラウザだけで完結）。
-4. **Flash.**（初回のみ） キーボードをブートローダにして UF2 を書き込む（[Build & flash](#build--flash-ビルドと書き込み)）。
-5. **Set up your OS IME.** ローマ字入力モードにする等、OS側の準備（[docs/guides](docs/guides/)）。
+判定方式・親指キー・キー配列は**あとからブラウザだけでいくらでも変えられる**ので、
+まずは何も変更せず、ビルド済みファームをそのまま焼いて動かすのがおすすめです。
+fork やビルド環境の構築は不要です（fork が必要になるケースは[後述](#fork-が必要になるのはいつ)）。
 
-**ここから先は再ビルド・再フラッシュ不要です。** 判定方式（ms=即出力 / %=やまぶきR風の後判定）・判定窓・
-親指キー等は、キーボードをUSBケーブルで繋いだブラウザ(Chrome/Edge, Windows/macOS共通)から
-その場で変更・保存できます:
-**https://autofor.github.io/cornix-oyayubi/**
+### ステップ1: ファームウェア(UF2)をダウンロードする
 
-キー配列そのもの（どのキーに何を割り当てるか、レイヤー構成）を変えたい場合は、同じくUSB接続だけで
-**[ZMK Studio](https://zmk.dev/docs/features/studio)** から編集・保存できます。こちらもファーム再ビルドは不要です。
-ZMK Studioは分割キーボードの「central」側のみが対応するため、繋ぐ先は構成によって変わります:
-- **ドングルなし構成**: 左手(`cornix_left`)をUSB接続
-- **ドングルあり構成**: ドングル本体(`cornix_dongle_adapter`)をUSB接続
+1. GitHub にログインした状態で、このリポジトリの **[Actions タブ](../../actions)** を開く
+2. 一覧の一番上にある緑✓の実行（Build ZMK firmware）をクリック
+3. ページ下部の **Artifacts** にある **firmware** をクリックしてダウンロード
+4. `firmware.zip` を展開する。中に複数の `.uf2` が入っているが、通常（ドングルなし）構成で使うのは2つだけ:
+   - **左手用**: `cornix_left_default_nosd.uf2`
+   - **右手用**: `cornix_right_nosd.uf2`
+   - （`dongle` / `debug` / `reset` を含むファイルは通常は使いません）
 
-（右手/ドングル用左手は peripheral のため ZMK Studio 接続対象ではありません）
+### ステップ2: キーボードに書き込む（左右それぞれ・初回のみ）
+
+1. **左手側**を USB ケーブルで PC に接続する
+2. 本体のリセットボタンを**素早く2回**押す → PC に USB ドライブが現れる（ブートローダモード）
+3. そのドライブに `cornix_left_default_nosd.uf2` を**ドラッグ&ドロップ**する
+4. コピーが終わるとドライブが自動的に消えて再起動する。これで左手は完了
+5. **右手側**も同様に: USB 接続 → リセット2回押し → `cornix_right_nosd.uf2` をドラッグ&ドロップ
+
+書き込みツールのインストールは不要です（UF2 方式なので Windows/macOS 共通・ドラッグ&ドロップのみ）。
+うまくいかない場合は [docs/guides/build-and-flash-workflow.md](docs/guides/build-and-flash-workflow.md) 参照。
+
+### ステップ3: 接続して OS 側の IME を準備する
+
+1. 書き込み後は普通のキーボードとして動きます。**無線で使う場合**は OS の Bluetooth 設定からペアリング
+   （左手側が親機。以後 USB ケーブルは不要）。USB 接続のままでも使えます
+2. OS の IME を**ローマ字入力モード**にする（NICOLA エンジンがローマ字列を送出するため）。
+   詳細は [docs/guides](docs/guides/) 参照
+3. 半角/全角キーで IME オン →「親」キーで NICOLA レイヤーに入ると親指シフトで打てます
+
+### ステップ4（任意）: 打鍵感を自分に合わせる — 再ビルド・再フラッシュ不要
+
+キーボードを USB で繋ぎ、Chrome/Edge で **https://autofor.github.io/cornix-oyayubi/** を開くと、
+その場で変更・保存できます（保存はキーボード内フラッシュ。以後は無線運用でも保持されます）:
+
+- **判定方式** mode（0 = 固定ms窓・先判定 / 1 = やまぶきR風%・後判定）
+- **判定窓** timeout(ms) / **判定範囲** range(%) / **連続シフト** cont
+- **親指キー単独タップの送出キー** lthumb / rthumb
+- 設定の**エクスポート/インポート**（買い替え・複数台への引き継ぎ用）
+
+キー配列そのもの（どのキーに何を割り当てるか・レイヤー構成）も、同じく USB 接続だけで
+**[ZMK Studio](https://zmk.dev/docs/features/studio)** から編集・保存できます（再ビルド不要）。
+ZMK Studio は分割キーボードの「central」側のみ対応のため、繋ぐ先は構成で変わります:
+
+- **ドングルなし構成**: 左手（`cornix_left`）を USB 接続
+- **ドングルあり構成**: ドングル本体（`cornix_dongle_adapter`）を USB 接続
+- （右手/ドングル用左手は peripheral のため接続対象外）
+
+### fork が必要になるのはいつ?
+
+ここまでの手順に fork は不要です。**コンパイル時にしか変えられない設定**を変更したい場合のみ、
+自分のアカウントに fork してビルドします。代表例:
+
+- **IME 切替キーの変更**（Windows JIS 配列以外の環境）: 既定では半角/全角キー位置が `GRAVE` を送ります。
+  US 配列や macOS では `config/cornix.keymap` の `#define NICOLA_ZENKAKU_KEY GRAVE` を
+  自分の環境の IME 切替キーに差し替えてください
+- 既定値そのものの変更や、キーマップをテキストで管理したい場合
+
+fork してビルドする手順:
+
+1. このページ右上の **Fork** → **Create fork**
+2. **fork 直後は GitHub Actions が無効です。** 自分の fork の **Actions** タブを開き、
+   「I understand my workflows, go ahead and enable them」を押して有効化する
+   （**これを忘れるとビルドが一切走りません**）
+3. fork 内の `config/cornix.keymap` を開き、鉛筆アイコン（Edit）で冒頭の `#define` を編集 → **Commit changes**
+4. コミットすると自動でビルドが始まります。以降はステップ1〜2と同じ
+   （自分の fork の Actions から UF2 をダウンロードして書き込み）
 
 ## Configure / 設定
 
-すべての個人設定は `config/cornix.keymap` 冒頭の `#define` に集約しています。
-IME連動キーはOS/配列で「効くキー」が違うため、そこに **Windows(JIS) / Windows(US) / macOS** の
-プリセット表を用意しています。まずは自分のOSの行をコピーしてください。
+コンパイル時の個人設定は `config/cornix.keymap` 冒頭の `#define` に集約しています
+（判定窓・判定範囲の既定値、親指シフトキー位置、IME 切替キー `NICOLA_ZENKAKU_KEY` など。
+各行のコメント参照）。ランタイムで変えられる項目は上記ステップ4の Web 設定ツールが優先されます。
 
 ## Build & flash / ビルドと書き込み（初回のみ）
 
