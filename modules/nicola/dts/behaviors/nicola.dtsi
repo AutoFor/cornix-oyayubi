@@ -1,0 +1,19 @@
+/*
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ */
+
+/ {
+    behaviors {
+        /omit-if-no-ref/ nc: nicola {
+            compatible = "zmk,behavior-nicola";
+            #binding-cells = <1>;
+            display-name = "NICOLA";
+        };
+
+        /omit-if-no-ref/ ime_settle: ime_settle {
+            compatible = "zmk,behavior-ime-settle";
+            #binding-cells = <1>;
+            display-name = "IME settle";
+        };
+    };
+};

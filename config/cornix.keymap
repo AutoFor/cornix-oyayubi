@@ -1,0 +1,234 @@
+/*
+ * Cornix keymap — Vial (keymap-20260706-203100.vil) からの移植
+ * マスター: AutoFor/cornix-oyayubi docs/keymap/README.md
+ *
+ * レイヤー: 0=Base 1=NICOLA 2=Num/Nav 3=Symbol 4=Fn 5=Plain
+ *   (NICOLAを低番号に置き、NICOLA中でもL1/L2等のレイヤーキーが上に重なって
+ *    Baseと同じように機能する。番号は下の L_* define で管理)
+ * Vialタップダンス対応:
+ *   TD(0) tap TO(1)/hold MO(1)      -> &tt_num (hold-tap: mo/to)
+ *   TD(1) tap OSL(2)/hold MO(2)     -> &msl    (hold-tap: mo/sl) ※double-tap TO(2)は未移植
+ *   TD(2) tap ESC/double-tap Win    -> &td_esc_win (tap-dance)
+ *   TD(3) tap OSM(Ctrl)/hold Ctrl   -> &oct LCTRL LCTRL (hold-tap: kp/sk)
+ *   TD(4) tap OSM(Shift)/hold Shift -> &osf LSHFT LSHFT
+ *   TD(6) 復帰                       -> &to 0
+ * USER00-02(無線系) -> &bt BT_SEL 0/1/2 に置換、L3右手に BT_CLR / &out を追加
+ */
+
+#include <behaviors.dtsi>
+#include <behaviors/nicola.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+
+// ============================================================
+// 親指シフト(NICOLA)の設定はここだけ変えればOK。変更後 push → flash-cornix.ps1
+// ============================================================
+// 判定方式は実行時に切替 (USBシリアルで set mode 0/1、Web設定ツールからも可):
+//   mode 0 = 固定ms窓・先判定 (NICOLA_TIMEOUT_MS が有効)
+//   mode 1 = やまぶきR風%・後判定 (NICOLA_RANGE_PCT が有効)
+// 両方定義してあるので方式を切り替えてもこのファイルはそのまま使える
+// エンジン本体は modules/nicola/ に同居している
+// 2026-07-08 ログ実測: 意図した同時打鍵は全て34ms以内、誤爆(ロールオーバー)は67ms
+// → 中間の50msに設定 (以前は100msで広すぎた)
+#define NICOLA_TIMEOUT_MS 50   // 同時打鍵判定窓 (ms) — mainブランチ用
+#define NICOLA_RANGE_PCT 65    // 同時打鍵判定範囲 (%) — range-pctブランチ用
+// 連続シフト: 親指を押しっぱなしで後続の文字にもシフトをかけ続ける (1=オン, 0=オフ)
+#define NICOLA_CONTINUOUS 0
+// 親指シフトキー (キーマップ内の全該当箇所に自動反映される)
+#define NICOLA_LTHUMB SPACE  // 左親指シフト (単独タップはこのキー自身)
+#define NICOLA_RTHUMB INT4   // 右親指シフト (INT4=変換)
+
+// レイヤー切替(#47「親」)とIME切替(#36 半角/全角)は完全に独立したキーにしてある
+// (2026-07-22。ウィンドウ切替直後にIMEトグルがズレる問題の切り分けのため分離。
+//  以前はnicola_on/off等の連動マクロで1キーにまとめていたが廃止)。
+// 半角/全角キーが送るキーは環境ごとにここを差し替える(Windows(JIS)既定=GRAVE)。
+#define NICOLA_ZENKAKU_KEY GRAVE
+
+// レイヤー番号。NICOLAを低番号に置くことで、NICOLA中でもレイヤーキーが
+// 上に重なりBaseと同じように機能する(キーマップ内はこのdefineを使うこと)
+#define L_BASE   0
+#define L_NICOLA 1
+#define L_NUM    2
+#define L_SYM    3
+#define L_FN     4
+#define L_PLAIN  5
+
+&nc {
+    timeout-ms = <NICOLA_TIMEOUT_MS>;
+    range-pct = <NICOLA_RANGE_PCT>;
+    continuous-shift = <NICOLA_CONTINUOUS>;
+    left-thumb = <NICOLA_LTHUMB>;
+    right-thumb = <NICOLA_RTHUMB>;
+};
+
+/ {
+    behaviors {
+        // TD(0): tap=TO(1), hold=MO(1)
+        tt_num: tap_to_hold_mo {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&mo>, <&to>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <150>;
+        };
+
+        // TD(1): tap=OSL(2), hold=MO(2)
+        msl: mo_sticky_layer {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&mo>, <&sl>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <150>;
+        };
+
+        // TD(3): tap=OSM(Ctrl), hold=Ctrl (Vial判定250ms)
+        oct: osm_or_hold_ctrl {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&sk>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <250>;
+        };
+
+        // TD(4): tap=OSM(Shift), hold=Shift (Vial判定200ms)
+        osf: osm_or_hold_shift {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&sk>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+        };
+
+        // TD(2): tap=ESC, double-tap=Win
+        td_esc_win: td_esc_win {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <150>;
+            bindings = <&kp ESC>, <&kp LGUI>;
+        };
+
+        // エンコーダ2: マウスホイール
+        scroll_enc: scroll_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        };
+    };
+
+    macros {
+        // Vial M5: "te"
+        macro_te: macro_te {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp E>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        // Vial combo: LAlt + Esc -> M5("te") (NICOLA中もBase同様に有効)
+        combo_te {
+            bindings = <&macro_te>;
+            key-positions = <38 40>;
+            layers = <L_BASE L_NICOLA>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        base_layer {
+            display-name = "Base";
+            // 左手                                          右手
+            // Tab    Q    W    E    R    T              Y    U    I    O    P    BSpc
+            // 全角   A    S    D    F    G              H    J    K    L    ;    Enter
+            // Sft*   Z    X    C    V    B  Mute  MClk  N    M    ,    .    /    Del
+            // Esc/Win RAlt LAlt Ctl* Spc  L1*   L2* 変換  親(レイヤー切替のみ)  --  --  PrtSc
+            bindings = <
+&kp TAB          &kp Q     &kp W     &kp E            &kp R           &kp T                              &kp Y      &kp U     &kp I      &kp O      &kp P      &kp BSPC
+&kp NICOLA_ZENKAKU_KEY &kp A &kp S    &kp D            &kp F           &kp G                              &kp H      &kp J     &kp K      &kp L      &kp SEMI   &kp ENTER
+&osf LSHFT LSHFT &kp Z     &kp X     &kp C            &kp V           &kp B      &kp C_MUTE  &mkp MCLK   &kp N      &kp M     &kp COMMA  &kp DOT    &kp FSLH   &kp DEL
+&td_esc_win      &kp RALT  &kp LALT  &oct LCTRL LCTRL &kp SPACE       &tt_num L_NUM L_NUM                &msl L_SYM L_SYM &kp INT4 &to L_NICOLA &none &none &kp PSCRN
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_enc>;
+        };
+
+        nicola_layer {
+            display-name = "NICOLA";
+            // 親指シフト。文字キーは &nc、親指シフトキーはファイル冒頭の
+            // NICOLA_LTHUMB / NICOLA_RTHUMB 定義が自動反映される
+            // @キー(P右隣)は NICOLA-J規格どおり単独=、(読点。Pキー単独でも同じ、が出るため
+            // この位置をBackspaceに明け渡しても、を失わない)
+            // Tab/Enter/Delete/レイヤーキー等は &trans でベースのまま
+            // (レイヤー1に配置: NumNav/Symbol/Fnが上に重なるためL1/L2キーもBase同様に効く)
+            // 解除は右手親指行内から4番目(Baseの「親」と同じ物理キー、2026-07-22に全角の位置へ移動)。単純にBaseへ戻るだけ
+            bindings = <
+&trans           &nc Q     &nc W     &nc E       &nc R       &nc T                              &nc Y      &nc U     &nc I      &nc O      &nc P      &kp BSPC
+&trans           &nc A     &nc S     &nc D       &nc F       &nc G                              &nc H      &nc J     &nc K      &nc L      &nc SEMI   &trans
+&trans           &nc Z     &nc X     &nc C       &nc V       &nc B       &trans      &trans     &nc N      &nc M     &nc COMMA  &nc DOT    &nc SLASH  &trans
+&trans           &trans    &trans    &trans      &nc NICOLA_LTHUMB &trans                       &trans     &nc NICOLA_RTHUMB &to L_BASE &trans &trans &trans
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_enc>;
+        };
+
+        num_nav_layer {
+            display-name = "NumNav";
+            // Esc    1    2    3    4    5              6    7    8    9    0    @
+            // BSpc   --   F2   ¥    :*   -              ←    ↓    ↑    →    +    Enter
+            // Sft*   --   --   --   '&   "@             Home PgDn PgUp End  --   _
+            // Esc/Win --  LAlt LCtrl Spc  TO0        OSM(Win) TO4  --   --   TO_Fn  --
+            bindings = <
+&kp ESC          &kp N1    &kp N2    &kp N3      &kp N4      &kp N5                             &kp N6     &kp N7     &kp N8     &kp N9     &kp N0        &kp LBKT
+&kp BSPC         &none     &kp F2    &kp INT3    &kp SQT     &kp MINUS                          &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp LS(SEMI)  &kp ENTER
+&osf LSHFT LSHFT &none     &none     &none       &kp LS(N7)  &kp LS(N2)  &kp C_MUTE  &mkp MCLK  &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &none         &kp LS(INT1)
+&td_esc_win      &none     &kp LALT  &kp LCTRL   &kp SPACE   &to L_BASE                         &sk LGUI   &to L_PLAIN &none     &none      &to L_FN      &none
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_enc>;
+        };
+
+        symbol_layer {
+            display-name = "Symbol";
+            // --     --   --   TO0  --   --             --   --   (    )    --   --
+            // --     --   --   --   --   --             ]    #    --   --   --   --
+            // Sft*   --   --   --   --   --             }    ~    --   --   --   --
+            // Esc/Win --   --  LCtrl --  TO0            --   --   --  BT0  BT1  BT2
+            bindings = <
+&none            &none     &none     &to L_BASE  &none       &none                              &none            &none                &kp LS(N8)  &kp LS(N9)    &none         &none
+&none            &none     &none     &none       &none       &none                              &kp RBKT         &kp NON_US_HASH      &none       &none         &none         &none
+&osf LSHFT LSHFT &none     &none     &none       &none       &none       &kp C_MUTE  &mkp MCLK  &kp LS(RBKT)     &kp LS(NON_US_HASH)  &none       &none         &none         &none
+&td_esc_win      &none     &none     &kp LCTRL   &none       &to L_BASE                         &none            &none                &none       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_enc>;
+        };
+
+        fn_layer {
+            display-name = "Fn";
+            // --     F1   F2   F3   F4   F5             BTCLR USB  BLE  --   --   --
+            // --     F6   F7   F8   F9   F10            --   --   --   --   --   --
+            // --     --   --   --   F11  F12            --   --   --   --   --   --
+            // --     --  LAlt  --   --   TO0            --   --   --   --   --   --
+            bindings = <
+&none            &kp F1    &kp F2    &kp F3      &kp F4      &kp F5                             &bt BT_CLR  &out OUT_USB  &out OUT_BLE  &none      &none      &none
+&none            &kp F6    &kp F7    &kp F8      &kp F9      &kp F10                            &none       &none         &none         &none      &none      &none
+&none            &none     &none     &none       &kp F11     &kp F12     &kp C_MUTE  &mkp MCLK  &none       &none         &none         &none      &none      &none
+&none            &none     &kp LALT  &none       &none       &to L_BASE                         &none       &none         &none         &none      &none      &none
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_enc>;
+        };
+
+        plain_layer {
+            display-name = "Plain";
+            // 素のQWERTY(ゲーム等用)。修飾キーは通常位置
+            bindings = <
+&kp TAB          &kp Q     &kp W     &kp E       &kp R       &kp T                              &kp Y      &kp U     &kp I      &kp O        &kp P      &kp LBKT
+&kp BSPC         &kp A     &kp S     &kp D       &kp F       &kp G                              &kp H      &kp J     &kp K      &kp L        &kp SEMI   &kp ENTER
+&kp LSHFT        &kp Z     &kp X     &kp C       &kp V       &kp B       &kp C_MUTE  &mkp MCLK  &kp N      &kp M     &kp COMMA  &kp DOT      &kp FSLH   &kp DEL
+&kp LCTRL        &none     &kp LALT  &kp LGUI    &kp SPACE   &to L_BASE                         &none      &none     &none      &kp CAPS     &none      &none
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_enc>;
+        };
+    };
+};

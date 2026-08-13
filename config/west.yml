@@ -1,0 +1,42 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: hitsmaxft
+      url-base: https://github.com/hitsmaxft
+    - name: englmaxi
+      url-base: https://github.com/englmaxi
+    - name: urob
+      url-base: https://github.com/urob
+    - name: janpfischer
+      url-base: https://github.com/janpfischer
+    - name: AutoFor
+      url-base: https://github.com/AutoFor
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      clone-depth: 1
+      import:
+        file: app/west.yml
+    - name: zmk-helpers
+      remote: urob
+      revision: main
+      clone-depth: 1
+    # 親指シフト同時打鍵エンジンは modules/nicola/ に同居 (zephyr/module.yml で配線)
+    # ステータスLED表示 (cornix_indicator シールドが使用)
+    # hitsmaxft版はZephyr 4.x非対応のため AutoFor fork (Kconfig修正済み) を使用
+    - name: zmk-rgbled-widget
+      remote: AutoFor
+      revision: main
+      clone-depth: 1
+    - name: zmk-dongle-display
+      remote: englmaxi
+      revision: main
+      clone-depth: 1
+    #- name: zmk-dongle-screen
+    #  remote: janpfischer
+    #  revision: main
+    #  clone-depth: 1
+  self:
+    path: config

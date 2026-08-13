@@ -1,0 +1,213 @@
+<title>Cornix 配置変更メモ</title>
+<style>
+  :root {
+    --paper: #F4F5F2; --cap: #FDFDFC; --cap-edge: #D8DBD6; --ink: #24272A;
+    --sub: #8A9088; --accent: #33628C; --accent-bg: rgba(51,98,140,0.10);
+    --sel: #B44A2A; --sel-bg: rgba(180,74,42,0.12);
+    --shadow: 0 1px 2px rgba(36,39,42,0.10), 0 2px 6px rgba(36,39,42,0.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper:#17191C; --cap:#23272C; --cap-edge:#34393F; --ink:#E8E9E6; --sub:#7B8278;
+      --accent:#85AED4; --accent-bg:rgba(133,174,212,0.12); --sel:#E08D68; --sel-bg:rgba(224,141,104,0.14);
+      --shadow: 0 1px 2px rgba(0,0,0,0.4); }
+  }
+  :root[data-theme="dark"] { --paper:#17191C; --cap:#23272C; --cap-edge:#34393F; --ink:#E8E9E6; --sub:#7B8278;
+    --accent:#85AED4; --accent-bg:rgba(133,174,212,0.12); --sel:#E08D68; --sel-bg:rgba(224,141,104,0.14);
+    --shadow: 0 1px 2px rgba(0,0,0,0.4); }
+  :root[data-theme="light"] { --paper:#F4F5F2; --cap:#FDFDFC; --cap-edge:#D8DBD6; --ink:#24272A; --sub:#8A9088;
+    --accent:#33628C; --accent-bg:rgba(51,98,140,0.10); --sel:#B44A2A; --sel-bg:rgba(180,74,42,0.12);
+    --shadow: 0 1px 2px rgba(36,39,42,0.10), 0 2px 6px rgba(36,39,42,0.05); }
+
+  body { background: var(--paper); color: var(--ink); margin: 0; padding: 24px 18px 56px;
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic UI", "Noto Sans JP", "Meiryo", sans-serif; }
+  .wrap { max-width: 1080px; margin: 0 auto; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .lead { color: var(--sub); font-size: 12.5px; margin: 0 0 18px; line-height: 1.7; }
+
+  .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+  .tab { border: 1px solid var(--cap-edge); background: var(--cap); color: var(--ink);
+    border-radius: 7px; padding: 6px 14px; font-size: 13px; cursor: pointer; font-family: inherit; }
+  .tab.on { background: var(--accent); border-color: var(--accent); color: var(--paper); font-weight: 700; }
+  .tab:focus-visible, .key:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .board-scroll { overflow-x: auto; padding-bottom: 4px; }
+  .board { width: max-content; margin: 0 auto; display: flex; flex-direction: column; gap: 6px; }
+  .row { display: flex; gap: 6px; }
+  .gap { width: 34px; }
+  .key { width: 64px; height: 56px; background: var(--cap); border: 1px solid var(--cap-edge);
+    border-radius: 8px; box-shadow: var(--shadow); cursor: pointer; position: relative;
+    font-family: inherit; color: var(--ink); padding: 4px 6px; text-align: left; }
+  .key .idx { position: absolute; top: 3px; right: 6px; font-size: 9.5px; color: var(--sub);
+    font-family: Consolas, monospace; }
+  .key .lab { position: absolute; left: 7px; bottom: 6px; font-size: 13px; font-weight: 700;
+    max-width: 54px; overflow: hidden; white-space: nowrap; }
+  .key.picked { border-color: var(--sel); background: var(--sel-bg); }
+  .key:hover { border-color: var(--accent); }
+
+  .panel { margin-top: 20px; background: var(--cap); border: 1px solid var(--cap-edge);
+    border-radius: 10px; padding: 16px 18px; }
+  .panel h2 { font-size: 13px; margin: 0 0 10px; letter-spacing: 0.06em; color: var(--sub); }
+  .entry { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 8px; }
+  .entry .where { font-size: 12.5px; background: var(--accent-bg); color: var(--accent);
+    border-radius: 6px; padding: 5px 9px; font-weight: 700; white-space: nowrap; }
+  .entry input { flex: 1; min-width: 220px; font-family: inherit; font-size: 13.5px;
+    border: 1px solid var(--cap-edge); border-radius: 7px; padding: 7px 10px;
+    background: var(--paper); color: var(--ink); }
+  .entry .del { border: none; background: none; color: var(--sub); cursor: pointer; font-size: 15px; padding: 4px; }
+  .hint { color: var(--sub); font-size: 12px; margin: 4px 0 0; }
+
+  .out { margin-top: 14px; }
+  textarea { width: 100%; box-sizing: border-box; min-height: 110px; font-size: 13px; line-height: 1.7;
+    font-family: Consolas, "Cascadia Code", monospace; border: 1px solid var(--cap-edge); border-radius: 8px;
+    padding: 10px 12px; background: var(--paper); color: var(--ink); resize: vertical; }
+  .actions { display: flex; gap: 10px; margin-top: 8px; align-items: center; }
+  .copy { background: var(--accent); color: var(--paper); border: none; border-radius: 7px;
+    padding: 9px 20px; font-size: 13.5px; font-weight: 700; cursor: pointer; font-family: inherit; }
+  .copied { color: var(--accent); font-size: 12.5px; }
+</style>
+
+<div class="wrap">
+  <h1>Cornix 配置変更メモ</h1>
+  <p class="lead">レイヤーを選ぶ → 変えたキーをクリック → 「何に変えたか」を書く → 一番下の文章をコピーしてClaudeに貼るだけ。<br>
+  キーに書いてあるのは<b>今のgit上の割当</b>（＝Claudeが把握している状態）。実機と違うキーがあれば、それも報告対象です。</p>
+
+  <div class="tabs" id="tabs"></div>
+  <div class="board-scroll"><div class="board" id="board"></div></div>
+
+  <div class="panel">
+    <h2>変更リスト</h2>
+    <div id="entries"><p class="hint">まだありません。上のキーをクリックしてください。複数OK。</p></div>
+    <div class="out">
+      <textarea id="out" readonly placeholder="ここに報告文が生成されます"></textarea>
+      <div class="actions">
+        <button class="copy" id="copyBtn">コピー</button>
+        <span class="copied" id="copiedMsg"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const ROWS = [12, 12, 14, 12];
+const LAYERS = {
+  "Base": ["Tab","Q","W","E","R","T","Y","U","I","O","P","BSpc","全角","A","S","D","F","G","H","J","K","L",";","Enter","Shift*","Z","X","C","V","B","Mute","MClk","N","M",",",".","/","Del","Esc/Win","RAlt","LAlt","Ctrl*","Space","L1","L2","変換","親","--","--","PrtSc"],
+  "NumNav": ["Esc","1","2","3","4","5","6","7","8","9","0","@","BSpc","--","F2","¥","'","-","←","↓","↑","→","+","Enter","Shift*","--","--","--","'","\"","Mute","MClk","Home","PgDn","PgUp","End","--","_","Esc/Win","--","LAlt","LCtrl","Space","TO0","Win*","TO4","--","--","TOFn","--"],
+  "Symbol": ["--","--","--","TO0","--","--","--","--","(",")","--","--","--","--","--","--","--","--","]","#","--","--","--","--","Shift*","--","--","--","--","--","Mute","MClk","}","~","--","--","--","--","Esc/Win","--","--","LCtrl","--","TO0","--","--","--","BT0","BT1","BT2"],
+  "Fn": ["--","F1","F2","F3","F4","F5","BTCLR","USB","BLE","--","--","--","--","F6","F7","F8","F9","F10","--","--","--","--","--","--","--","--","--","--","F11","F12","Mute","MClk","--","--","--","--","--","--","--","--","LAlt","--","--","TO0","--","--","--","--","--","--"],
+  "Plain": ["Tab","Q","W","E","R","T","Y","U","I","O","P","@[","BSpc","A","S","D","F","G","H","J","K","L",";","Enter","LShift","Z","X","C","V","B","Mute","MClk","N","M",",",".","/","Del","LCtrl","--","LAlt","Win","Space","TO0","--","--","--","Caps","--","--"],
+  "NICOLA": ["▽","。","か","た","こ","さ","ら","ち","く","つ","、","BSpc","▽","う","し","て","け","せ","は","と","き","い","ん","▽","▽","。","ひ","す","ふ","へ","▽","▽","め","そ","ね","ほ","／","▽","▽","▽","▽","▽","左親指","▽","▽","右親指","戻る","▽","▽","▽"]
+};
+const ROW_NAMES = ["上段", "中段", "下段", "親指行"];
+
+function keyInfo(i) {
+  let r = 0, off = i;
+  while (off >= ROWS[r]) { off -= ROWS[r]; r++; }
+  const n = ROWS[r];
+  let hand, pos;
+  if (n === 14) {
+    if (off < 6) { hand = "左手"; pos = "外から" + (off + 1) + "番目"; }
+    else if (off < 8) { hand = "中央"; pos = off === 6 ? "左(Mute)" : "右(MClk)"; }
+    else { hand = "右手"; pos = "内から" + (off - 7) + "番目"; }
+  } else {
+    if (off < 6) { hand = "左手"; pos = "外から" + (off + 1) + "番目"; }
+    else { hand = "右手"; pos = "内から" + (off - 5) + "番目"; }
+  }
+  return { row: r, desc: hand + "・" + ROW_NAMES[r] + "・" + pos };
+}
+
+let layer = "Base";
+const changes = []; // {layer, idx, note}
+
+const tabsEl = document.getElementById("tabs");
+Object.keys(LAYERS).forEach(name => {
+  const b = document.createElement("button");
+  b.className = "tab" + (name === layer ? " on" : "");
+  b.textContent = name;
+  b.onclick = () => { layer = name; render(); };
+  tabsEl.appendChild(b);
+});
+
+function render() {
+  document.querySelectorAll(".tab").forEach(t => t.classList.toggle("on", t.textContent === layer));
+  const board = document.getElementById("board");
+  board.innerHTML = "";
+  let i = 0;
+  ROWS.forEach((n) => {
+    const row = document.createElement("div");
+    row.className = "row";
+    for (let c = 0; c < n; c++) {
+      if (n !== 14 && c === 6) { const g = document.createElement("div"); g.className = "gap"; row.appendChild(g); }
+      const idx = i++;
+      const k = document.createElement("button");
+      k.className = "key" + (changes.some(ch => ch.layer === layer && ch.idx === idx) ? " picked" : "");
+      k.innerHTML = '<span class="idx">' + idx + '</span><span class="lab"></span>';
+      k.querySelector(".lab").textContent = LAYERS[layer][idx];
+      k.onclick = () => addChange(idx);
+      row.appendChild(k);
+    }
+    board.appendChild(row);
+  });
+  renderEntries();
+}
+
+function addChange(idx) {
+  if (!changes.some(ch => ch.layer === layer && ch.idx === idx)) {
+    changes.push({ layer: layer, idx: idx, note: "" });
+  }
+  render();
+  const inputs = document.querySelectorAll("#entries input");
+  if (inputs.length) inputs[inputs.length - 1].focus();
+}
+
+function renderEntries() {
+  const box = document.getElementById("entries");
+  box.innerHTML = "";
+  if (!changes.length) {
+    box.innerHTML = '<p class="hint">まだありません。上のキーをクリックしてください。複数OK。</p>';
+  }
+  changes.forEach((ch, n) => {
+    const info = keyInfo(ch.idx);
+    const div = document.createElement("div");
+    div.className = "entry";
+    const where = document.createElement("span");
+    where.className = "where";
+    where.textContent = "[" + ch.layer + "] #" + ch.idx + " " + LAYERS[ch.layer][ch.idx] + "（" + info.desc + "）";
+    const input = document.createElement("input");
+    input.placeholder = "何に変えた？ 例:「Tabに変更」「#41と入れ替え」「Ctrl+Cを送るキーに」";
+    input.value = ch.note;
+    input.oninput = () => { ch.note = input.value; renderOut(); };
+    const del = document.createElement("button");
+    del.className = "del"; del.textContent = "✕"; del.title = "削除";
+    del.onclick = () => { changes.splice(n, 1); render(); };
+    div.appendChild(where); div.appendChild(input); div.appendChild(del);
+    box.appendChild(div);
+  });
+  renderOut();
+}
+
+function renderOut() {
+  const out = document.getElementById("out");
+  if (!changes.length) { out.value = ""; return; }
+  const lines = ["【キーマップ変更報告】"];
+  changes.forEach(ch => {
+    const info = keyInfo(ch.idx);
+    lines.push("- [" + ch.layer + "レイヤー] 位置#" + ch.idx + "（現在: " + LAYERS[ch.layer][ch.idx] + " ／ " + info.desc + "）→ " + (ch.note || "（記入待ち）"));
+  });
+  lines.push("上記をgitのkeymapに反映してビルドしてください。");
+  out.value = lines.join("\n");
+}
+
+document.getElementById("copyBtn").onclick = async () => {
+  const out = document.getElementById("out");
+  const msg = document.getElementById("copiedMsg");
+  out.select();
+  let ok = false;
+  try { await navigator.clipboard.writeText(out.value); ok = true; } catch (e) {
+    try { ok = document.execCommand("copy"); } catch (e2) { ok = false; }
+  }
+  msg.textContent = ok ? "コピーしました — Claudeに貼り付けてください" : "自動コピー不可 — 上の欄を全選択してコピーしてください";
+  setTimeout(() => { msg.textContent = ""; }, 4000);
+};
+
+render();
+</script>

@@ -1,0 +1,15 @@
+/*
+ * NICOLA設定コンソール用のUSB CDC-ACMを追加する。
+ * zmk-nicola の config_console.c が chosen zmk,nicola-cfg-uart を拾って有効化される。
+ */
+&zephyr_udc0 {
+    nicola_cdc: nicola_cdc {
+        compatible = "zephyr,cdc-acm-uart";
+    };
+};
+
+/ {
+    chosen {
+        zmk,nicola-cfg-uart = &nicola_cdc;
+    };
+};

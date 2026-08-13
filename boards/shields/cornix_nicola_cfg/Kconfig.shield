@@ -1,0 +1,2 @@
+config SHIELD_CORNIX_NICOLA_CFG
+    def_bool $(shields_list_contains,cornix_nicola_cfg)

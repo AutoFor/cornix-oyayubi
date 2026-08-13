@@ -1,0 +1,6 @@
+if SHIELD_CORNIX_NICOLA_CFG
+
+config UART_INTERRUPT_DRIVEN
+    default y
+
+endif

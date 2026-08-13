@@ -1,0 +1,4582 @@
+{
+ "version": 1,
+ "uid": "16882930253541523000",
+ "layers": [
+  {
+   "index": 0,
+   "rows": [
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_Q",
+      "label": "Q",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_W",
+      "label": "W",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_E",
+      "label": "E",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_R",
+      "label": "R",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_T",
+      "label": "T",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TAB",
+      "label": "Tab",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "TD(4)",
+      "label": "TD",
+      "sublabel": "4",
+      "type": "tapdance",
+      "isEmpty": false
+     },
+     {
+      "keycode": "TD(5)",
+      "label": "TD",
+      "sublabel": "5",
+      "type": "tapdance",
+      "isEmpty": false
+     },
+     {
+      "keycode": "TD(6)",
+      "label": "TD",
+      "sublabel": "6",
+      "type": "tapdance",
+      "isEmpty": false
+     },
+     {
+      "keycode": "TD(7)",
+      "label": "TD",
+      "sublabel": "7",
+      "type": "tapdance",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_G",
+      "label": "G",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_CAPSLOCK",
+      "label": "Caps",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_Z",
+      "label": "Z",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_X",
+      "label": "X",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_C",
+      "label": "C",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_V",
+      "label": "V",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_B",
+      "label": "B",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_MUTE",
+      "label": "Mute",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "USER00",
+      "label": "BT0",
+      "type": "special",
+      "isEmpty": false
+     },
+     {
+      "keycode": "USER01",
+      "label": "BT1",
+      "type": "special",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_BSPACE",
+      "label": "Bksp",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_ENTER",
+      "label": "Enter",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "TD(21)",
+      "label": "TD",
+      "sublabel": "21",
+      "type": "tapdance",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_MINUS",
+      "label": "-",
+      "sublabel": "_",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_P",
+      "label": "P",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_O",
+      "label": "O",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_I",
+      "label": "I",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_U",
+      "label": "U",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_Y",
+      "label": "Y",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_QUOTE",
+      "label": "'",
+      "sublabel": "\"",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_SCOLON",
+      "label": ";",
+      "sublabel": ":",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "TD(3)",
+      "label": "TD",
+      "sublabel": "3",
+      "type": "tapdance",
+      "isEmpty": false
+     },
+     {
+      "keycode": "TD(2)",
+      "label": "TD",
+      "sublabel": "2",
+      "type": "tapdance",
+      "isEmpty": false
+     },
+     {
+      "keycode": "TD(1)",
+      "label": "TD",
+      "sublabel": "1",
+      "type": "tapdance",
+      "isEmpty": false
+     },
+     {
+      "keycode": "TD(0)",
+      "label": "TD",
+      "sublabel": "0",
+      "type": "tapdance",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_F11",
+      "label": "F11",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_GRAVE",
+      "label": "`",
+      "sublabel": "~",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_SLASH",
+      "label": "/",
+      "sublabel": "?",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_DOT",
+      "label": ".",
+      "sublabel": ">",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_COMMA",
+      "label": ",",
+      "sublabel": "<",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_M",
+      "label": "M",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_N",
+      "label": "N",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_DELETE",
+      "label": "Del",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_SPACE",
+      "label": "Space",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "TD(22)",
+      "label": "TD",
+      "sublabel": "22",
+      "type": "tapdance",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 1,
+   "rows": [
+    [
+     {
+      "keycode": "TO(0)",
+      "label": "TO",
+      "sublabel": "0",
+      "type": "layer",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_KP_PLUS",
+      "label": "+",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_KP_MINUS",
+      "label": "-",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_KP_ASTERISK",
+      "label": "*",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_KP_SLASH",
+      "label": "/",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_KP_EQUAL",
+      "label": "KP_EQUAL",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_KP_1",
+      "label": "1",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_KP_2",
+      "label": "2",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_KP_3",
+      "label": "3",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_KP_4",
+      "label": "4",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_KP_5",
+      "label": "5",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_KP_DOT",
+      "label": ".",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_MUTE",
+      "label": "Mute",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "RALT(KC_BSLASH)",
+      "label": "|",
+      "sublabel": "RAlt",
+      "secondaryLabel": "\\",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_BSLASH)",
+      "label": "|",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_7)",
+      "label": "&",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_4)",
+      "label": "$",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_6)",
+      "label": "^",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_KP_0",
+      "label": "0",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_KP_9",
+      "label": "9",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_KP_8",
+      "label": "8",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_KP_7",
+      "label": "7",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_KP_6",
+      "label": "6",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_BTN3",
+      "label": "Mouse3",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_SCOLON)",
+      "label": ":",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_8)",
+      "label": "*",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_5)",
+      "label": "%",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 2,
+   "rows": [
+    [
+     {
+      "keycode": "TO(0)",
+      "label": "TO",
+      "sublabel": "0",
+      "type": "layer",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "TD(8)",
+      "label": "TD",
+      "sublabel": "8",
+      "type": "tapdance",
+      "isEmpty": false
+     },
+     {
+      "keycode": "TD(9)",
+      "label": "TD",
+      "sublabel": "9",
+      "type": "tapdance",
+      "isEmpty": false
+     },
+     {
+      "keycode": "TD(10)",
+      "label": "TD",
+      "sublabel": "10",
+      "type": "tapdance",
+      "isEmpty": false
+     },
+     {
+      "keycode": "TD(11)",
+      "label": "TD",
+      "sublabel": "11",
+      "type": "tapdance",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "LGUI(KC_KP_0)",
+      "label": "0",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_BTN3",
+      "label": "Mouse3",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_BTN1",
+      "label": "Mouse1",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_BTN2",
+      "label": "Mouse2",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "TO(0)",
+      "label": "TO",
+      "sublabel": "0",
+      "type": "layer",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_RALT",
+      "label": "RAlt",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_WH_L",
+      "label": "WhlL",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_WH_D",
+      "label": "WhlDn",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_WH_U",
+      "label": "WhlUp",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_WH_R",
+      "label": "WhlR",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_ACL0",
+      "label": "ACL0",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_ACL2",
+      "label": "ACL2",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_MS_R",
+      "label": "MsR",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_MS_U",
+      "label": "MsUp",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_MS_D",
+      "label": "MsDn",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_MS_L",
+      "label": "MsL",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_F11",
+      "label": "F11",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "C_S(KC_RIGHT)",
+      "label": "→",
+      "sublabel": "C+S",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "C_S(KC_LEFT)",
+      "label": "←",
+      "sublabel": "C+S",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "HYPR(KC_3)",
+      "label": "#",
+      "sublabel": "C+A+S+G",
+      "secondaryLabel": "3",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "HYPR(KC_2)",
+      "label": "@",
+      "sublabel": "C+A+S+G",
+      "secondaryLabel": "2",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "HYPR(KC_1)",
+      "label": "!",
+      "sublabel": "C+A+S+G",
+      "secondaryLabel": "1",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_BTN2",
+      "label": "Mouse2",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_BTN1",
+      "label": "Mouse1",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_BTN3",
+      "label": "Mouse3",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 3,
+   "rows": [
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_MUTE",
+      "label": "Mute",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_BTN3",
+      "label": "Mouse3",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 4,
+   "rows": [
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_MUTE",
+      "label": "Mute",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_BTN3",
+      "label": "Mouse3",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 5,
+   "rows": [
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_MUTE",
+      "label": "Mute",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_BTN3",
+      "label": "Mouse3",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 6,
+   "rows": [
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_MUTE",
+      "label": "Mute",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_BTN3",
+      "label": "Mouse3",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 7,
+   "rows": [
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_MUTE",
+      "label": "Mute",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_BTN3",
+      "label": "Mouse3",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 8,
+   "rows": [
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_MUTE",
+      "label": "Mute",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_BTN3",
+      "label": "Mouse3",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 9,
+   "rows": [
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_MUTE",
+      "label": "Mute",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_BTN3",
+      "label": "Mouse3",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  }
+ ],
+ "encoders": [
+  {
+   "layer": 0,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_VOLD",
+   "clockwise": "KC_VOLU"
+  },
+  {
+   "layer": 0,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_BRID",
+   "clockwise": "KC_BRIU"
+  },
+  {
+   "layer": 1,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_VOLD",
+   "clockwise": "KC_VOLU"
+  },
+  {
+   "layer": 1,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_WH_U",
+   "clockwise": "KC_WH_D"
+  },
+  {
+   "layer": 2,
+   "encoderIndex": 0,
+   "counterClockwise": "LGUI(KC_KP_MINUS)",
+   "clockwise": "LGUI(KC_KP_PLUS)"
+  },
+  {
+   "layer": 2,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_WH_D",
+   "clockwise": "KC_WH_U"
+  },
+  {
+   "layer": 3,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_VOLD",
+   "clockwise": "KC_VOLU"
+  },
+  {
+   "layer": 3,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_WH_U",
+   "clockwise": "KC_WH_D"
+  },
+  {
+   "layer": 4,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_VOLD",
+   "clockwise": "KC_VOLU"
+  },
+  {
+   "layer": 4,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_WH_U",
+   "clockwise": "KC_WH_D"
+  },
+  {
+   "layer": 5,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_VOLD",
+   "clockwise": "KC_VOLU"
+  },
+  {
+   "layer": 5,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_WH_U",
+   "clockwise": "KC_WH_D"
+  },
+  {
+   "layer": 6,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_VOLD",
+   "clockwise": "KC_VOLU"
+  },
+  {
+   "layer": 6,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_WH_U",
+   "clockwise": "KC_WH_D"
+  },
+  {
+   "layer": 7,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_VOLD",
+   "clockwise": "KC_VOLU"
+  },
+  {
+   "layer": 7,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_WH_U",
+   "clockwise": "KC_WH_D"
+  },
+  {
+   "layer": 8,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_VOLD",
+   "clockwise": "KC_VOLU"
+  },
+  {
+   "layer": 8,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_WH_U",
+   "clockwise": "KC_WH_D"
+  },
+  {
+   "layer": 9,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_VOLD",
+   "clockwise": "KC_VOLU"
+  },
+  {
+   "layer": 9,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_WH_U",
+   "clockwise": "KC_WH_D"
+  }
+ ],
+ "macros": [
+  {
+   "index": 0,
+   "actions": [
+    {
+     "type": "tap",
+     "keys": [
+      "KC_LANG2"
+     ]
+    },
+    {
+     "type": "down",
+     "keys": [
+      "KC_LGUI"
+     ]
+    },
+    {
+     "type": "tap",
+     "keys": [
+      "KC_SPACE"
+     ]
+    },
+    {
+     "type": "delay",
+     "keys": [
+      10
+     ]
+    },
+    {
+     "type": "up",
+     "keys": [
+      "KC_LGUI"
+     ]
+    }
+   ],
+   "isEmpty": false
+  },
+  {
+   "index": 1,
+   "actions": [
+    {
+     "type": "tap",
+     "keys": [
+      "KC_LANG2"
+     ]
+    },
+    {
+     "type": "down",
+     "keys": [
+      "KC_LSHIFT",
+      "KC_LGUI"
+     ]
+    },
+    {
+     "type": "tap",
+     "keys": [
+      "KC_SPACE"
+     ]
+    },
+    {
+     "type": "delay",
+     "keys": [
+      10
+     ]
+    },
+    {
+     "type": "up",
+     "keys": [
+      "KC_LSHIFT",
+      "KC_LGUI"
+     ]
+    }
+   ],
+   "isEmpty": false
+  },
+  {
+   "index": 2,
+   "actions": [
+    {
+     "type": "tap",
+     "keys": [
+      "KC_LANG2"
+     ]
+    },
+    {
+     "type": "down",
+     "keys": [
+      "KC_LCTRL",
+      "KC_LALT",
+      "KC_LGUI"
+     ]
+    },
+    {
+     "type": "tap",
+     "keys": [
+      "KC_SPACE"
+     ]
+    },
+    {
+     "type": "delay",
+     "keys": [
+      10
+     ]
+    },
+    {
+     "type": "up",
+     "keys": [
+      "KC_LCTRL",
+      "KC_LALT",
+      "KC_LGUI"
+     ]
+    }
+   ],
+   "isEmpty": false
+  },
+  {
+   "index": 3,
+   "actions": [
+    {
+     "type": "tap",
+     "keys": [
+      "KC_LANG2"
+     ]
+    },
+    {
+     "type": "down",
+     "keys": [
+      "KC_LCTRL",
+      "KC_LSHIFT",
+      "KC_LALT"
+     ]
+    },
+    {
+     "type": "tap",
+     "keys": [
+      "KC_SPACE"
+     ]
+    },
+    {
+     "type": "delay",
+     "keys": [
+      10
+     ]
+    },
+    {
+     "type": "up",
+     "keys": [
+      "KC_LCTRL",
+      "KC_LSHIFT",
+      "KC_LALT"
+     ]
+    }
+   ],
+   "isEmpty": false
+  },
+  {
+   "index": 4,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 5,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 6,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 7,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 8,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 9,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 10,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 11,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 12,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 13,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 14,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 15,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 16,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 17,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 18,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 19,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 20,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 21,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 22,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 23,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 24,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 25,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 26,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 27,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 28,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 29,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 30,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 31,
+   "actions": [],
+   "isEmpty": true
+  }
+ ],
+ "tapDance": [
+  {
+   "index": 0,
+   "tap": "KC_H",
+   "hold": "KC_LEFT",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": false
+  },
+  {
+   "index": 1,
+   "tap": "KC_J",
+   "hold": "KC_DOWN",
+   "doubleTap": "KC_ESCAPE",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": false
+  },
+  {
+   "index": 2,
+   "tap": "KC_K",
+   "hold": "KC_UP",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": false
+  },
+  {
+   "index": 3,
+   "tap": "KC_L",
+   "hold": "KC_RIGHT",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": false
+  },
+  {
+   "index": 4,
+   "tap": "KC_A",
+   "hold": "KC_LCTRL",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": false
+  },
+  {
+   "index": 5,
+   "tap": "KC_S",
+   "hold": "KC_LALT",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": false
+  },
+  {
+   "index": 6,
+   "tap": "KC_D",
+   "hold": "KC_LGUI",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": false
+  },
+  {
+   "index": 7,
+   "tap": "KC_F",
+   "hold": "KC_LSHIFT",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": false
+  },
+  {
+   "index": 8,
+   "tap": "M3",
+   "hold": "KC_LCTRL",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": false
+  },
+  {
+   "index": 9,
+   "tap": "M2",
+   "hold": "KC_LALT",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": false
+  },
+  {
+   "index": 10,
+   "tap": "M1",
+   "hold": "KC_LGUI",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": false
+  },
+  {
+   "index": 11,
+   "tap": "M0",
+   "hold": "KC_LSHIFT",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": false
+  },
+  {
+   "index": 12,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": true
+  },
+  {
+   "index": 13,
+   "tap": "M3",
+   "hold": "KC_LCTRL",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 100,
+   "isEmpty": false
+  },
+  {
+   "index": 14,
+   "tap": "M2",
+   "hold": "KC_LALT",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 100,
+   "isEmpty": false
+  },
+  {
+   "index": 15,
+   "tap": "M1",
+   "hold": "KC_LGUI",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 100,
+   "isEmpty": false
+  },
+  {
+   "index": 16,
+   "tap": "M0",
+   "hold": "KC_LSHIFT",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": false
+  },
+  {
+   "index": 17,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": true
+  },
+  {
+   "index": 18,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": true
+  },
+  {
+   "index": 19,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": true
+  },
+  {
+   "index": 20,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": true
+  },
+  {
+   "index": 21,
+   "tap": "OSL(1)",
+   "hold": "MO(1)",
+   "doubleTap": "TO(1)",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": false
+  },
+  {
+   "index": 22,
+   "tap": "OSL(2)",
+   "hold": "MO(2)",
+   "doubleTap": "TO(2)",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": false
+  },
+  {
+   "index": 23,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": true
+  },
+  {
+   "index": 24,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 150,
+   "isEmpty": true
+  },
+  {
+   "index": 25,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 26,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 27,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 28,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 29,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 30,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 31,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  }
+ ],
+ "combos": [
+  {
+   "index": 0,
+   "keys": [
+    "KC_E",
+    "KC_R"
+   ],
+   "output": "LSFT(KC_9)",
+   "isEmpty": false
+  },
+  {
+   "index": 1,
+   "keys": [
+    "KC_U",
+    "KC_I"
+   ],
+   "output": "LSFT(KC_0)",
+   "isEmpty": false
+  },
+  {
+   "index": 2,
+   "keys": [
+    "TD(6)",
+    "TD(7)"
+   ],
+   "output": "KC_LBRACKET",
+   "isEmpty": false
+  },
+  {
+   "index": 3,
+   "keys": [
+    "TD(1)",
+    "TD(2)"
+   ],
+   "output": "KC_RBRACKET",
+   "isEmpty": false
+  },
+  {
+   "index": 4,
+   "keys": [
+    "KC_C",
+    "KC_V"
+   ],
+   "output": "LSFT(KC_LBRACKET)",
+   "isEmpty": false
+  },
+  {
+   "index": 5,
+   "keys": [
+    "KC_M",
+    "KC_COMMA"
+   ],
+   "output": "LSFT(KC_RBRACKET)",
+   "isEmpty": false
+  },
+  {
+   "index": 6,
+   "keys": [
+    "KC_Z",
+    "KC_X"
+   ],
+   "output": "LSFT(KC_COMMA)",
+   "isEmpty": false
+  },
+  {
+   "index": 7,
+   "keys": [
+    "KC_DOT",
+    "KC_SLASH"
+   ],
+   "output": "LSFT(KC_DOT)",
+   "isEmpty": false
+  },
+  {
+   "index": 8,
+   "keys": [
+    "TD(7)",
+    "KC_BSPACE"
+   ],
+   "output": "KC_LANG2",
+   "isEmpty": false
+  },
+  {
+   "index": 9,
+   "keys": [
+    "TD(1)",
+    "KC_DELETE"
+   ],
+   "output": "KC_LANG1",
+   "isEmpty": false
+  },
+  {
+   "index": 10,
+   "keys": [
+    "TD(4)",
+    "TD(5)"
+   ],
+   "output": "LSFT(KC_1)",
+   "isEmpty": false
+  },
+  {
+   "index": 11,
+   "keys": [
+    "TD(3)",
+    "KC_SCOLON"
+   ],
+   "output": "LSFT(KC_SLASH)",
+   "isEmpty": false
+  },
+  {
+   "index": 12,
+   "keys": [
+    "KC_Q",
+    "KC_W"
+   ],
+   "output": "LSFT(KC_2)",
+   "isEmpty": false
+  },
+  {
+   "index": 13,
+   "keys": [
+    "KC_O",
+    "KC_P"
+   ],
+   "output": "LSFT(KC_3)",
+   "isEmpty": false
+  },
+  {
+   "index": 14,
+   "keys": [
+    "TD(1)",
+    "TD(4)"
+   ],
+   "output": "OSM(MOD_LCTL)",
+   "isEmpty": false
+  },
+  {
+   "index": 15,
+   "keys": [
+    "TD(1)",
+    "TD(5)"
+   ],
+   "output": "OSM(MOD_LALT)",
+   "isEmpty": false
+  },
+  {
+   "index": 16,
+   "keys": [
+    "TD(1)",
+    "TD(6)"
+   ],
+   "output": "OSM(MOD_LGUI)",
+   "isEmpty": false
+  },
+  {
+   "index": 17,
+   "keys": [
+    "TD(1)",
+    "TD(7)"
+   ],
+   "output": "OSM(MOD_LSFT)",
+   "isEmpty": false
+  },
+  {
+   "index": 18,
+   "keys": [
+    "TD(1)",
+    "TD(6)",
+    "TD(7)"
+   ],
+   "output": "OSM(MOD_LSFT|MOD_LGUI)",
+   "isEmpty": false
+  },
+  {
+   "index": 19,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 20,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 21,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 22,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 23,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 24,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 25,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 26,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 27,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 28,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 29,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 30,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 31,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  }
+ ],
+ "settings": {
+  "2": 50,
+  "6": 1000,
+  "7": 150,
+  "18": 20,
+  "19": 20,
+  "22": 0,
+  "23": 1,
+  "26": 1,
+  "27": 80
+ }
+}

@@ -1,0 +1,9 @@
+---
+name: cornix-oyayubi
+build:
+  cmake: modules/nicola
+  kconfig: modules/nicola/Kconfig
+  settings:
+    board_root: .
+    snippet_root: .
+    dts_root: modules/nicola

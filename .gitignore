@@ -1,0 +1,13 @@
+
+.env
+.direnv
+result
+.envrc
+.build
+target
+
+firmware
+
+# Python
+__pycache__/
+*.pyc

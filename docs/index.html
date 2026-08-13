@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cornix 親指シフト設定</title>
+<style>
+  :root {
+    --paper: #F4F5F2; --card: #FDFDFC; --edge: #D8DBD6; --ink: #24272A;
+    --sub: #8A9088; --accent: #33628C; --accent-bg: rgba(51,98,140,0.10);
+    --ok: #3E7A46; --warn: #B44A2A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper:#17191C; --card:#23272C; --edge:#34393F; --ink:#E8E9E6; --sub:#7B8278;
+      --accent:#85AED4; --accent-bg:rgba(133,174,212,0.12); --ok:#7FBF87; --warn:#E08D68; }
+  }
+  body { background: var(--paper); color: var(--ink); margin: 0; padding: 28px 18px 60px;
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic UI", "Noto Sans JP", "Meiryo", sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .lead { color: var(--sub); font-size: 12.5px; line-height: 1.7; margin: 0 0 20px; }
+  .card { background: var(--card); border: 1px solid var(--edge); border-radius: 10px;
+    padding: 16px 18px; margin-bottom: 14px; }
+  .card h2 { font-size: 13px; letter-spacing: 0.06em; color: var(--sub); margin: 0 0 12px; }
+  label { display: block; font-size: 13.5px; font-weight: 700; margin-bottom: 6px; }
+  .row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+  .row:last-child { margin-bottom: 0; }
+  input[type="range"] { flex: 1; min-width: 180px; accent-color: var(--accent); }
+  input[type="number"], select, input[type="password"] {
+    font-family: inherit; font-size: 14px; border: 1px solid var(--edge); border-radius: 7px;
+    padding: 7px 10px; background: var(--paper); color: var(--ink); }
+  input[type="number"] { width: 80px; }
+  input[type="password"] { flex: 1; min-width: 240px; }
+  .hint { font-size: 12px; color: var(--sub); line-height: 1.7; margin-top: 4px; }
+  .val { font-size: 15px; font-weight: 700; min-width: 66px; text-align: right;
+    font-variant-numeric: tabular-nums; }
+  .toggle { display: flex; align-items: center; gap: 10px; font-size: 13.5px; }
+  .toggle input { width: 18px; height: 18px; accent-color: var(--accent); }
+  button { font-family: inherit; font-size: 14px; font-weight: 700; border: none;
+    border-radius: 8px; padding: 11px 22px; cursor: pointer; }
+  .primary { background: var(--accent); color: var(--paper); }
+  .ghost { background: none; border: 1px solid var(--edge); color: var(--ink); font-weight: 400; }
+  button:disabled { opacity: 0.5; cursor: default; }
+  #status { font-size: 13px; line-height: 1.8; margin-top: 12px; white-space: pre-wrap; }
+  #status a { color: var(--accent); }
+  .ok { color: var(--ok); } .err { color: var(--warn); }
+  .footer { color: var(--sub); font-size: 11.5px; line-height: 1.8; margin-top: 22px; }
+  details summary { cursor: pointer; font-size: 12.5px; color: var(--accent); }
+  details p { font-size: 12.5px; color: var(--sub); line-height: 1.8; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Cornix 親指シフト設定</h1>
+  <p class="lead">ZMK Studioでは変えられない設定をここから変更できます。「保存してビルド」を押すと
+  GitHubにコミットされ自動ビルドが走ります（約2.5分）。あとはPCで <code>.\flash-cornix.ps1</code> を実行するだけ。</p>
+
+  <div class="card">
+    <h2>⚡ USB直結モード（ビルド・書き込み不要）</h2>
+    <div class="row">
+      <button class="primary" id="usbBtn">USBで接続</button>
+      <span id="usbState" class="hint">左手をUSBケーブルで接続してからどうぞ（Chrome/Edge）</span>
+    </div>
+    <p class="hint">接続中はスライダーやプルダウンを動かすと<b>その場でキーボードに反映・保存</b>されます
+    （判定窓/判定範囲/連続シフト/親指シフトキーのタップ出力）。
+    親指シフトキーのタップ出力の変更は2026-07以降のファームが必要です（それ以前はGitHubモードで）。</p>
+    <div class="toggle" style="margin-top:12px">
+      <input type="checkbox" id="logToggle" disabled>
+      <span>動作ログを表示（同時打鍵の判定・出力かなをリアルタイム表示）</span>
+    </div>
+    <pre id="usbLog" style="display:none; max-height:220px; overflow-y:auto; background:var(--paper);
+      border:1px solid var(--edge); border-radius:8px; padding:10px 12px; font-size:12px;
+      line-height:1.6; margin:10px 0 0; white-space:pre-wrap;"></pre>
+  </div>
+
+  <div class="card">
+    <h2>接続設定（GitHubモード・初回のみ）</h2>
+    <div class="row">
+      <input type="password" id="token" placeholder="GitHub Personal Access Token">
+      <button class="ghost" id="loadBtn">現在の設定を読み込む</button>
+    </div>
+    <details>
+      <summary>トークンの作り方</summary>
+      <p>GitHub → Settings → Developer settings → Personal access tokens → <b>Tokens (classic)</b> →
+      Generate new token → スコープ <b>repo</b> にチェック → 生成された ghp_... をここに貼る。<br>
+      トークンはこのブラウザのlocalStorageにのみ保存され、GitHub API以外には送信されません。</p>
+    </details>
+  </div>
+
+  <div class="card">
+    <h2>同時打鍵の判定</h2>
+    <div class="row" id="modeRow" style="display:none">
+      <label>判定方式</label>
+      <label class="toggle" style="font-weight:400"><input type="radio" name="ncmode" value="0" id="modeMs"> ms方式（固定窓・即出力）</label>
+      <label class="toggle" style="font-weight:400"><input type="radio" name="ncmode" value="1" id="modePct"> %方式（やまぶきR正本・後判定）</label>
+    </div>
+    <p class="hint" id="modeHint" style="margin:0 0 14px">USB接続すると判定方式をここで切り替えられます
+    （2026-07-08夜以降のファーム。即時反映・保存）。それ以前のファームでは方式はブランチ固定です。</p>
+    <div id="methodInfo" style="display:none; font-size:13px; font-weight:700; margin-bottom:12px"></div>
+    <div class="row">
+      <label style="flex-basis:100%">判定窓 <span class="hint">ms方式（現在の運用）。文字キー→親指キーがこの時間以内なら同時打鍵</span></label>
+      <input type="range" id="timeout" min="10" max="300" step="5">
+      <input type="number" id="timeoutNum" min="10" max="300" step="5">
+      <span class="val" id="timeoutVal"></span>
+    </div>
+    <div class="row">
+      <label style="flex-basis:100%">判定範囲 <span class="hint">%方式（set mode 1）。やまぶきR方式の重なり率</span></label>
+      <input type="range" id="rangePct" min="1" max="100" step="1">
+      <input type="number" id="rangePctNum" min="1" max="100" step="1">
+      <span class="val" id="rangePctVal"></span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>親指シフトキー</h2>
+    <div class="row">
+      <label>左親指シフト</label>
+      <select id="lthumb">
+        <option value="SPACE">Space</option>
+        <option value="INT4">変換 (INT4)</option>
+        <option value="INT5">無変換 (INT5)</option>
+        <option value="INT2">かな (INT2)</option>
+        <option value="LALT">左Alt</option>
+        <option value="RALT">右Alt</option>
+        <option value="LGUI">Win</option>
+      </select>
+      <label style="margin-left:16px">右親指シフト</label>
+      <select id="rthumb">
+        <option value="INT4">変換 (INT4)</option>
+        <option value="SPACE">Space</option>
+        <option value="INT5">無変換 (INT5)</option>
+        <option value="INT2">かな (INT2)</option>
+        <option value="LALT">左Alt</option>
+        <option value="RALT">右Alt</option>
+        <option value="LGUI">Win</option>
+      </select>
+    </div>
+    <p class="hint">単独タップ時に送出するキーです。USB接続中はその場で反映・保存されます
+    （2026-07以降のファームが必要）。物理的な位置(どのキーか)は変わりません — 位置そのものを
+    動かしたいときは <a href="https://zmk.dev/docs/features/studio" target="_blank" rel="noopener">ZMK Studio</a>
+    で該当キーのbindingを移動してください。</p>
+  </div>
+
+  <div class="card">
+    <h2>連続シフト</h2>
+    <div class="toggle">
+      <input type="checkbox" id="continuous">
+      <span>親指を押しっぱなしで後続の文字にもシフトをかけ続ける（既定オフ）</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>設定の保存/読み込み（JSONファイル）</h2>
+    <div class="row">
+      <button class="ghost" id="exportBtn">書き出す（ダウンロード）</button>
+      <button class="ghost" id="importBtn">読み込む（ファイル選択）</button>
+      <input type="file" id="importFile" accept="application/json,.json" style="display:none">
+    </div>
+    <p class="hint">画面上の現在の設定一式（判定窓/判定範囲/方式/連続シフト/親指キー）をJSONファイルとして
+    保存・読み込みできます。バックアップや別のCornix・他の人との設定共有に使えます。<br>
+    USB接続中に読み込むと、判定窓/判定範囲/方式/連続シフトはその場で反映・保存されます
+    （親指キーの位置はGitHubモードでの保存が必要です）。</p>
+  </div>
+
+  <div class="card">
+    <button class="primary" id="saveBtn" disabled>保存してビルド（GitHubモード）</button>
+    <p class="hint">このボタンはGitHubモード専用です。上のトークンを入れて「現在の設定を読み込む」を
+    押すと有効になります。<b>USB直結モードでは不要</b>（スライダーを動かした時点で保存済み）。</p>
+    <div id="status"></div>
+  </div>
+
+  <p class="footer">対象: AutoFor/cornix-oyayubi の config/cornix.keymap（#define ブロック）。
+  ビルド状況は <a href="https://github.com/AutoFor/cornix-oyayubi/actions" target="_blank" rel="noopener">GitHub Actions</a> で確認できます。</p>
+</div>
+
+<script>
+const REPO = "AutoFor/cornix-oyayubi";
+const PATH = "config/cornix.keymap";
+const BRANCH = "main";
+const DEFINES = {
+  timeout:    { re: /(#define NICOLA_TIMEOUT_MS )(\d+)/,  el: "timeout" },
+  rangePct:   { re: /(#define NICOLA_RANGE_PCT )(\d+)/,   el: "rangePct" },
+  continuous: { re: /(#define NICOLA_CONTINUOUS )([01])/, el: "continuous" },
+  lthumb:     { re: /(#define NICOLA_LTHUMB )(\w+)/,      el: "lthumb" },
+  rthumb:     { re: /(#define NICOLA_RTHUMB )(\w+)/,      el: "rthumb" },
+};
+
+const $ = id => document.getElementById(id);
+const status = (msg, cls) => { const s = $("status"); s.className = cls || ""; s.innerHTML = msg; };
+
+// token persistence
+$("token").value = localStorage.getItem("cornix_gh_token") || "";
+
+// slider <-> number sync
+for (const key of ["timeout", "rangePct"]) {
+  const range = $(key), num = $(key + "Num"), val = $(key + "Val");
+  const unit = key === "timeout" ? "ms" : "%";
+  const sync = v => { range.value = v; num.value = v; val.textContent = v + unit; };
+  range.oninput = () => sync(range.value);
+  num.oninput = () => sync(num.value);
+  sync(range.value);
+}
+
+function b64decode(b64) {
+  return new TextDecoder().decode(Uint8Array.from(atob(b64.replace(/\n/g, "")), c => c.charCodeAt(0)));
+}
+function b64encode(str) {
+  const bytes = new TextEncoder().encode(str);
+  let bin = "";
+  for (const b of bytes) bin += String.fromCharCode(b);
+  return btoa(bin);
+}
+
+async function gh(url, opts = {}) {
+  const token = $("token").value.trim();
+  const res = await fetch("https://api.github.com/" + url, {
+    ...opts,
+    headers: {
+      "Authorization": "Bearer " + token,
+      "Accept": "application/vnd.github+json",
+      ...(opts.headers || {}),
+    },
+  });
+  if (!res.ok) throw new Error(res.status + " " + (await res.text()).slice(0, 200));
+  return res.json();
+}
+
+async function getFile(branch) {
+  return gh(`repos/${REPO}/contents/${PATH}?ref=${branch}`);
+}
+
+$("loadBtn").onclick = async () => {
+  try {
+    localStorage.setItem("cornix_gh_token", $("token").value.trim());
+    status("読み込み中...");
+    const file = await getFile(BRANCH);
+    const text = b64decode(file.content);
+    for (const [key, def] of Object.entries(DEFINES)) {
+      const m = text.match(def.re);
+      if (!m) throw new Error("設定が見つかりません: " + key);
+      const el = $(def.el);
+      if (el.type === "checkbox") el.checked = m[2] === "1";
+      else if (el.tagName === "SELECT") el.value = m[2];
+      else { el.value = m[2]; el.oninput(); }
+    }
+    $("saveBtn").disabled = false;
+    status("✅ 現在の設定を読み込みました。変更して「保存してビルド」を押してください。", "ok");
+  } catch (e) {
+    status("❌ 読み込み失敗: " + e.message + "\nトークンの権限(repo)と有効期限を確認してください。", "err");
+  }
+};
+
+function applyValues(text) {
+  const vals = {
+    timeout: $("timeout").value,
+    rangePct: $("rangePct").value,
+    continuous: $("continuous").checked ? "1" : "0",
+    lthumb: $("lthumb").value,
+    rthumb: $("rthumb").value,
+  };
+  for (const [key, def] of Object.entries(DEFINES)) {
+    text = text.replace(def.re, "$1" + vals[key]);
+  }
+  return text;
+}
+
+async function saveBranch(branch, summary) {
+  const file = await getFile(branch);
+  const newText = applyValues(b64decode(file.content));
+  if (newText === b64decode(file.content)) return "変更なし";
+  await gh(`repos/${REPO}/contents/${PATH}`, {
+    method: "PUT",
+    body: JSON.stringify({
+      message: `keymap: Web設定ツールから変更 (${summary})\n\n🤖 via cornix-config web tool`,
+      content: b64encode(newText),
+      sha: file.sha,
+      branch: branch,
+    }),
+  });
+  return "コミット完了";
+}
+
+// ---- USB直結モード (WebSerial) ----
+let usbPort = null, usbWriter = null, usbReader = null, usbBuf = "", usbGotReply = false;
+
+function usbResetUi(msg) {
+  usbPort = null; usbWriter = null; usbReader = null;
+  $("usbBtn").textContent = "USBで接続";
+  $("usbState").textContent = msg || "切断されました";
+  $("logToggle").disabled = true;
+  $("logToggle").checked = false;
+  $("usbLog").style.display = "none";
+  $("methodInfo").style.display = "none";
+  $("modeRow").style.display = "none";
+  $("modeHint").style.display = "block";
+  setControlsEnabled("timeout", true);
+  setControlsEnabled("rangePct", true);
+}
+
+async function usbDisconnect() {
+  const port = usbPort;
+  try { await usbSend("set log 0"); } catch (e) {}
+  try { if (usbReader) await usbReader.cancel(); } catch (e) {}
+  try { if (usbWriter) usbWriter.releaseLock(); } catch (e) {}
+  try { if (port) await port.close(); } catch (e) {}
+  usbResetUi();
+}
+
+async function usbSend(line) {
+  if (!usbWriter) return;
+  await usbWriter.write(new TextEncoder().encode(line + "\n"));
+}
+
+function setControlsEnabled(prefix, on) {
+  $(prefix).disabled = !on;
+  $(prefix + "Num").disabled = !on;
+  $(prefix).style.opacity = on ? 1 : 0.35;
+}
+
+function usbApplyResponse(line) {
+  // 新: "ok timeout=50 range=65 mode=0 cont=0 log=0" / 旧: mode無し・未使用側は-1
+  const m = line.match(/timeout=(-?\d+) range=(-?\d+)/);
+  if (!m) return;
+  const modeM = line.match(/mode=([01])/);
+  const contM = line.match(/cont=([01])/);
+  const info = $("methodInfo");
+  info.style.display = "block";
+  if (m[1] !== "-1") { $("timeout").value = m[1]; $("timeout").oninput(); }
+  if (m[2] !== "-1") { $("rangePct").value = m[2]; $("rangePct").oninput(); }
+  if (modeM) { // 統合ファーム: 方式を実行時切替できる
+    const pct = modeM[1] === "1";
+    $("modeRow").style.display = "flex";
+    $("modeHint").style.display = "none";
+    (pct ? $("modePct") : $("modeMs")).checked = true;
+    setControlsEnabled("timeout", !pct);
+    setControlsEnabled("rangePct", pct);
+    info.innerHTML = '現在の方式: <span class="ok">' + (pct ? "%方式 (やまぶきR正本)" : "ms方式") +
+      '</span>（上のラジオボタンで切替できます）';
+  } else { // 旧ファーム: ブランチ固定
+    if (m[1] !== "-1") {
+      setControlsEnabled("timeout", true); setControlsEnabled("rangePct", false);
+      info.innerHTML = '現在のファーム: <span class="ok">ms方式</span>（旧ファーム: 方式切替には最新ファームが必要）';
+    } else {
+      setControlsEnabled("rangePct", true); setControlsEnabled("timeout", false);
+      info.innerHTML = '現在のファーム: <span class="ok">%方式</span>（旧ファーム: 方式切替には最新ファームが必要）';
+    }
+  }
+  if (contM) $("continuous").checked = contM[1] === "1";
+  const lthumbM = line.match(/lthumb=(\w+)/);
+  const rthumbM = line.match(/rthumb=(\w+)/);
+  if (lthumbM && [...$("lthumb").options].some(o => o.value === lthumbM[1])) $("lthumb").value = lthumbM[1];
+  if (rthumbM && [...$("rthumb").options].some(o => o.value === rthumbM[1])) $("rthumb").value = rthumbM[1];
+  $("usbState").innerHTML = '<span class="ok">✅ 反映・保存済み: ' + line.replace(/^ok /, "") + "</span>";
+}
+
+async function usbReadLoop(reader) {
+  usbReader = reader;
+  try {
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      usbBuf += new TextDecoder().decode(value);
+      let nl;
+      while ((nl = usbBuf.indexOf("\n")) >= 0) {
+        const line = usbBuf.slice(0, nl).trim();
+        usbBuf = usbBuf.slice(nl + 1);
+        if (line.startsWith("ok")) { usbGotReply = true; usbApplyResponse(line); }
+        else if (line.startsWith("err")) { usbGotReply = true; $("usbState").innerHTML = '<span class="err">' + line + "</span>"; }
+        else if (line.startsWith("NC ")) {
+          const box = $("usbLog");
+          box.textContent += line + "\n";
+          if (box.textContent.length > 20000) box.textContent = box.textContent.slice(-15000);
+          box.scrollTop = box.scrollHeight;
+        }
+      }
+    }
+  } catch (e) { /* 切断 */ }
+  try { reader.releaseLock(); } catch (e) {}
+  if (usbPort) usbResetUi();
+}
+
+$("usbBtn").onclick = async () => {
+  if (usbPort) {
+    await usbDisconnect();
+    return;
+  }
+  if (!("serial" in navigator)) { $("usbState").innerHTML = '<span class="err">このブラウザはWebSerial非対応です (Chrome/Edgeを使用)</span>'; return; }
+  try {
+    usbPort = await navigator.serial.requestPort();
+    await usbPort.open({ baudRate: 115200 });
+    usbWriter = usbPort.writable.getWriter();
+    usbReadLoop(usbPort.readable.getReader());
+    $("usbBtn").textContent = "切断";
+    $("usbState").textContent = "接続しました。現在値を取得中...";
+    $("logToggle").disabled = false;
+    usbGotReply = false;
+    await usbSend("get");
+    setTimeout(() => {
+      if (!usbGotReply && usbPort) {
+        $("usbState").innerHTML = '<span class="err">応答がありません。①「切断」して再接続し、'
+          + '<b>別の「USB シリアル デバイス」</b>を選んでください（Studio用と設定用の2ポートがあります）'
+          + ' ②それでもダメなら今日以降のファームを書き込んでください (.\\flash-cornix.ps1)</span>';
+      }
+    }, 2500);
+  } catch (e) {
+    usbResetUi("");
+    $("usbState").innerHTML = '<span class="err">接続失敗: ' + e.message + "</span>";
+  }
+};
+
+// USB接続中はコントロール変更を即送信
+$("timeout").addEventListener("change", () => usbSend("set timeout " + $("timeout").value));
+$("timeoutNum").addEventListener("change", () => usbSend("set timeout " + $("timeoutNum").value));
+$("rangePct").addEventListener("change", () => usbSend("set range " + $("rangePct").value));
+$("rangePctNum").addEventListener("change", () => usbSend("set range " + $("rangePctNum").value));
+$("continuous").addEventListener("change", () => usbSend("set cont " + ($("continuous").checked ? 1 : 0)));
+$("modeMs").addEventListener("change", () => usbSend("set mode 0"));
+$("modePct").addEventListener("change", () => usbSend("set mode 1"));
+$("lthumb").addEventListener("change", () => usbSend("set lthumb " + $("lthumb").value));
+$("rthumb").addEventListener("change", () => usbSend("set rthumb " + $("rthumb").value));
+$("logToggle").addEventListener("change", () => {
+  const on = $("logToggle").checked;
+  $("usbLog").style.display = on ? "block" : "none";
+  if (on) $("usbLog").textContent = "";
+  usbSend("set log " + (on ? 1 : 0));
+});
+
+// ---- 設定のエクスポート/インポート (JSON) ----
+const CONFIG_SCHEMA = "cornix-nicola-config/v1";
+
+function currentConfigObject() {
+  return {
+    schema: CONFIG_SCHEMA,
+    timeout_ms: parseInt($("timeout").value, 10),
+    range_pct: parseInt($("rangePct").value, 10),
+    mode: $("modePct").checked ? 1 : 0,
+    continuous: $("continuous").checked,
+    lthumb: $("lthumb").value,
+    rthumb: $("rthumb").value,
+  };
+}
+
+$("exportBtn").onclick = () => {
+  const obj = currentConfigObject();
+  const blob = new Blob([JSON.stringify(obj, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const stamp = new Date().toISOString().replace(/[:.]/g, "-").slice(0, 19);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `cornix-nicola-config-${stamp}.json`;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+  status("✅ 設定をダウンロードしました。", "ok");
+};
+
+async function applyConfigObject(obj) {
+  if (typeof obj !== "object" || obj === null) throw new Error("不正なファイル形式です");
+  if (Number.isFinite(obj.timeout_ms)) { $("timeout").value = obj.timeout_ms; $("timeout").oninput(); }
+  if (Number.isFinite(obj.range_pct)) { $("rangePct").value = obj.range_pct; $("rangePct").oninput(); }
+  if (typeof obj.continuous === "boolean") $("continuous").checked = obj.continuous;
+  if (typeof obj.lthumb === "string" && [...$("lthumb").options].some(o => o.value === obj.lthumb)) $("lthumb").value = obj.lthumb;
+  if (typeof obj.rthumb === "string" && [...$("rthumb").options].some(o => o.value === obj.rthumb)) $("rthumb").value = obj.rthumb;
+  if (obj.mode === 0 || obj.mode === 1) (obj.mode === 1 ? $("modePct") : $("modeMs")).checked = true;
+
+  if (usbPort) {
+    if (Number.isFinite(obj.timeout_ms)) await usbSend("set timeout " + obj.timeout_ms);
+    if (Number.isFinite(obj.range_pct)) await usbSend("set range " + obj.range_pct);
+    if (typeof obj.continuous === "boolean") await usbSend("set cont " + (obj.continuous ? 1 : 0));
+    if (obj.mode === 0 || obj.mode === 1) await usbSend("set mode " + obj.mode);
+  }
+}
+
+$("importBtn").onclick = () => $("importFile").click();
+$("importFile").onchange = async (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  try {
+    const obj = JSON.parse(await file.text());
+    await applyConfigObject(obj);
+    status(
+      usbPort
+        ? "✅ 設定を読み込み、USB接続中の判定窓/判定範囲/方式/連続シフトへ即時反映・保存しました。親指キーの変更は「保存してビルド」で反映してください。"
+        : "✅ 設定を読み込みました。GitHubモードなら「保存してビルド」を押してください。",
+      "ok"
+    );
+  } catch (err) {
+    status("❌ 読み込み失敗: " + err.message, "err");
+  } finally {
+    e.target.value = "";
+  }
+};
+
+$("saveBtn").onclick = async () => {
+  const btn = $("saveBtn");
+  btn.disabled = true;
+  try {
+    const summary = `窓${$("timeout").value}ms/範囲${$("rangePct").value}%/連続${$("continuous").checked ? "オン" : "オフ"}/L=${$("lthumb").value}/R=${$("rthumb").value}`;
+    status("保存中...");
+    const msg = await saveBranch(BRANCH, summary);
+    status(`✅ ${msg}\n自動ビルドが始まりました(約2.5分) → <a href="https://github.com/${REPO}/actions" target="_blank" rel="noopener">ビルド状況を確認</a>\n緑のチェックが付いたら PowerShell で: <code>.\\flash-cornix.ps1</code>`, "ok");
+  } catch (e) {
+    status("❌ 保存失敗: " + e.message, "err");
+  } finally {
+    btn.disabled = false;
+  }
+};
+</script>
+</body>
+</html>

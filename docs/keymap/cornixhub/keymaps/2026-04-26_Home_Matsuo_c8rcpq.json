@@ -1,0 +1,4355 @@
+{
+ "version": 1,
+ "uid": "16882930253541523000",
+ "layers": [
+  {
+   "index": 0,
+   "rows": [
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 1,
+   "rows": [
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 2,
+   "rows": [
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 3,
+   "rows": [
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 4,
+   "rows": [
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 5,
+   "rows": [
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 6,
+   "rows": [
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 7,
+   "rows": [
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 8,
+   "rows": [
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 9,
+   "rows": [
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  }
+ ],
+ "encoders": [
+  {
+   "layer": 0,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  },
+  {
+   "layer": 0,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  },
+  {
+   "layer": 1,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  },
+  {
+   "layer": 1,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  },
+  {
+   "layer": 2,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  },
+  {
+   "layer": 2,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  },
+  {
+   "layer": 3,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  },
+  {
+   "layer": 3,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  },
+  {
+   "layer": 4,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  },
+  {
+   "layer": 4,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  },
+  {
+   "layer": 5,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  },
+  {
+   "layer": 5,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  },
+  {
+   "layer": 6,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  },
+  {
+   "layer": 6,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  },
+  {
+   "layer": 7,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  },
+  {
+   "layer": 7,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  },
+  {
+   "layer": 8,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  },
+  {
+   "layer": 8,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  },
+  {
+   "layer": 9,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  },
+  {
+   "layer": 9,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  }
+ ],
+ "macros": [
+  {
+   "index": 0,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 1,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 2,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 3,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 4,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 5,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 6,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 7,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 8,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 9,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 10,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 11,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 12,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 13,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 14,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 15,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 16,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 17,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 18,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 19,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 20,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 21,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 22,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 23,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 24,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 25,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 26,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 27,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 28,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 29,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 30,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 31,
+   "actions": [],
+   "isEmpty": true
+  }
+ ],
+ "tapDance": [
+  {
+   "index": 0,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 1,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 2,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 3,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 4,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 5,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 6,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 7,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 8,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 9,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 10,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 11,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 12,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 13,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 14,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 15,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 16,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 17,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 18,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 19,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 20,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 21,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 22,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 23,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 24,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 25,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 26,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 27,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 28,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 29,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 30,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 31,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  }
+ ],
+ "combos": [
+  {
+   "index": 0,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 1,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 2,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 3,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 4,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 5,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 6,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 7,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 8,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 9,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 10,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 11,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 12,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 13,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 14,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 15,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 16,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 17,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 18,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 19,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 20,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 21,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 22,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 23,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 24,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 25,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 26,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 27,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 28,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 29,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 30,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 31,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  }
+ ],
+ "settings": {
+  "2": 50,
+  "6": 1000,
+  "7": 250,
+  "18": 20,
+  "19": 20,
+  "22": 1,
+  "23": 0,
+  "26": 1,
+  "27": 120
+ }
+}

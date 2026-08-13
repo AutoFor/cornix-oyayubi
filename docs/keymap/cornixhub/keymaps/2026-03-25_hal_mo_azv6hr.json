@@ -1,0 +1,4859 @@
+{
+ "version": 1,
+ "uid": "16882930253541523000",
+ "layers": [
+  {
+   "index": 0,
+   "rows": [
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LALT_T(KC_Q)",
+      "label": "Q",
+      "sublabel": "LAlt",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI_T(KC_W)",
+      "label": "W",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT_T(KC_E)",
+      "label": "E",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCTL_T(KC_R)",
+      "label": "R",
+      "sublabel": "LCtrl",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_T",
+      "label": "T",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_A",
+      "label": "A",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_S",
+      "label": "S",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_D",
+      "label": "D",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "OSL(5)",
+      "label": "OSL",
+      "sublabel": "5",
+      "type": "layer",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_G",
+      "label": "G",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_Z",
+      "label": "Z",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "OSL(3)",
+      "label": "OSL",
+      "sublabel": "3",
+      "type": "layer",
+      "isEmpty": false
+     },
+     {
+      "keycode": "OSL(1)",
+      "label": "OSL",
+      "sublabel": "1",
+      "type": "layer",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_V",
+      "label": "V",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_B",
+      "label": "B",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_LANG1",
+      "label": "LANG1",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "OSL(4)",
+      "label": "OSL",
+      "sublabel": "4",
+      "type": "layer",
+      "isEmpty": false
+     },
+     {
+      "keycode": "OSL(6)",
+      "label": "OSL",
+      "sublabel": "6",
+      "type": "layer",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LALT_T(KC_P)",
+      "label": "P",
+      "sublabel": "LAlt",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI_T(KC_O)",
+      "label": "O",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT_T(KC_I)",
+      "label": "I",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCTL_T(KC_U)",
+      "label": "U",
+      "sublabel": "LCtrl",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_Y",
+      "label": "Y",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_SPACE",
+      "label": "Space",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_L",
+      "label": "L",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_K",
+      "label": "K",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "OSL(4)",
+      "label": "OSL",
+      "sublabel": "4",
+      "type": "layer",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_H",
+      "label": "H",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "OSM(MOD_LSFT|MOD_LGUI)",
+      "label": "OSM(MOD_LSFT|MOD_LGUI)",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "OSL(2)",
+      "label": "OSL",
+      "sublabel": "2",
+      "type": "layer",
+      "isEmpty": false
+     },
+     {
+      "keycode": "OSL(1)",
+      "label": "OSL",
+      "sublabel": "1",
+      "type": "layer",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_M",
+      "label": "M",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_N",
+      "label": "N",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_LANG2",
+      "label": "LANG2",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "OSL(9)",
+      "label": "OSL",
+      "sublabel": "9",
+      "type": "layer",
+      "isEmpty": false
+     },
+     {
+      "keycode": "OSL(7)",
+      "label": "OSL",
+      "sublabel": "7",
+      "type": "layer",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 1,
+   "rows": [
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_UP)",
+      "label": "↑",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LALT(KC_LEFT)",
+      "label": "←",
+      "sublabel": "LAlt",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_UP",
+      "label": "↑",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LALT(KC_RIGHT)",
+      "label": "→",
+      "sublabel": "LAlt",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_DOWN)",
+      "label": "↓",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_LEFT)",
+      "label": "←",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_LEFT",
+      "label": "←",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_DOWN",
+      "label": "↓",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_RIGHT",
+      "label": "→",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_RIGHT)",
+      "label": "→",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSA(KC_LEFT)",
+      "label": "←",
+      "sublabel": "LS+LA",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_LEFT)",
+      "label": "←",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "OSM(MOD_LSFT)",
+      "label": "OSM(MOD_LSFT)",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_RIGHT)",
+      "label": "→",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSA(KC_RIGHT)",
+      "label": "→",
+      "sublabel": "LS+LA",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_UP)",
+      "label": "↑",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_DOWN)",
+      "label": "↓",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_ENTER)",
+      "label": "Enter",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "M6",
+      "label": "M",
+      "sublabel": "6",
+      "type": "macro",
+      "isEmpty": false
+     },
+     {
+      "keycode": "M5",
+      "label": "M",
+      "sublabel": "5",
+      "type": "macro",
+      "isEmpty": false
+     },
+     {
+      "keycode": "M7",
+      "label": "M",
+      "sublabel": "7",
+      "type": "macro",
+      "isEmpty": false
+     },
+     {
+      "keycode": "M8",
+      "label": "M",
+      "sublabel": "8",
+      "type": "macro",
+      "isEmpty": false
+     },
+     {
+      "keycode": "M4",
+      "label": "M",
+      "sublabel": "4",
+      "type": "macro",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_SPACE",
+      "label": "Space",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_MINUS",
+      "label": "-",
+      "sublabel": "_",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_BSPACE",
+      "label": "Bksp",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LALT_T(KC_ENTER)",
+      "label": "Enter",
+      "sublabel": "LAlt",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TAB",
+      "label": "Tab",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_1)",
+      "label": "!",
+      "sublabel": "LC+LA+LG",
+      "secondaryLabel": "1",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_MINUS)",
+      "label": "_",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "M2",
+      "label": "M",
+      "sublabel": "2",
+      "type": "macro",
+      "isEmpty": false
+     },
+     {
+      "keycode": "M3",
+      "label": "M",
+      "sublabel": "3",
+      "type": "macro",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_TAB)",
+      "label": "Tab",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "M10",
+      "label": "M",
+      "sublabel": "10",
+      "type": "macro",
+      "isEmpty": false
+     },
+     {
+      "keycode": "M9",
+      "label": "M",
+      "sublabel": "9",
+      "type": "macro",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_ENTER)",
+      "label": "Enter",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 2,
+   "rows": [
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_GRAVE",
+      "label": "`",
+      "sublabel": "~",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_LBRACKET",
+      "label": "[",
+      "sublabel": "{",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_RBRACKET",
+      "label": "]",
+      "sublabel": "}",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_9)",
+      "label": "(",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_0)",
+      "label": ")",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_LBRACKET)",
+      "label": "{",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_SCOLON)",
+      "label": ":",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_SLASH",
+      "label": "/",
+      "sublabel": "?",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_2)",
+      "label": "@",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_8)",
+      "label": "*",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_RBRACKET)",
+      "label": "}",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_EQUAL",
+      "label": "=",
+      "sublabel": "+",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_COMMA",
+      "label": ",",
+      "sublabel": "<",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_DOT",
+      "label": ".",
+      "sublabel": ">",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_3)",
+      "label": "#",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_7)",
+      "label": "&",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_1)",
+      "label": "!",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_SLASH)",
+      "label": "?",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_BSLASH)",
+      "label": "|",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_4)",
+      "label": "$",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_5)",
+      "label": "%",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_DOT)",
+      "label": ">",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_COMMA)",
+      "label": "<",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_6)",
+      "label": "^",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "M11",
+      "label": "M",
+      "sublabel": "11",
+      "type": "macro",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_QUOTE)",
+      "label": "\"",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_QUOTE",
+      "label": "'",
+      "sublabel": "\"",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_SCOLON",
+      "label": ";",
+      "sublabel": ":",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 3,
+   "rows": [
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_4)",
+      "label": "$",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_5)",
+      "label": "%",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_KP_PLUS",
+      "label": "+",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_KP_MINUS",
+      "label": "-",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "M11",
+      "label": "M",
+      "sublabel": "11",
+      "type": "macro",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_KP_ASTERISK",
+      "label": "*",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_KP_SLASH",
+      "label": "/",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_DOT",
+      "label": ".",
+      "sublabel": ">",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_3",
+      "label": "3",
+      "sublabel": "#",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_2",
+      "label": "2",
+      "sublabel": "@",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_1",
+      "label": "1",
+      "sublabel": "!",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_GRAVE)",
+      "label": "~",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_EQUAL",
+      "label": "=",
+      "sublabel": "+",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_6",
+      "label": "6",
+      "sublabel": "^",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_5",
+      "label": "5",
+      "sublabel": "%",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_4",
+      "label": "4",
+      "sublabel": "$",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_0",
+      "label": "0",
+      "sublabel": ")",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_NO",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_9",
+      "label": "9",
+      "sublabel": "(",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_8",
+      "label": "8",
+      "sublabel": "*",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_7",
+      "label": "7",
+      "sublabel": "&",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_SCOLON)",
+      "label": ":",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 4,
+   "rows": [
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_W)",
+      "label": "W",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "C_S(KC_TAB)",
+      "label": "Tab",
+      "sublabel": "C+S",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCTL(KC_TAB)",
+      "label": "Tab",
+      "sublabel": "LCtrl",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCG(KC_7)",
+      "label": "&",
+      "sublabel": "LC+LG",
+      "secondaryLabel": "7",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LALT(KC_TAB)",
+      "label": "Tab",
+      "sublabel": "LAlt",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCG(KC_TAB)",
+      "label": "Tab",
+      "sublabel": "LC+LG",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_TAB)",
+      "label": "Tab",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_F",
+      "label": "F",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCTL(KC_DOWN)",
+      "label": "↓",
+      "sublabel": "LCtrl",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSA(KC_TAB)",
+      "label": "Tab",
+      "sublabel": "LS+LA",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_X",
+      "label": "X",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_C",
+      "label": "C",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_LBRACKET)",
+      "label": "{",
+      "sublabel": "LGui",
+      "secondaryLabel": "[",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_RBRACKET)",
+      "label": "}",
+      "sublabel": "LGui",
+      "secondaryLabel": "]",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "M13",
+      "label": "M",
+      "sublabel": "13",
+      "type": "macro",
+      "isEmpty": false
+     },
+     {
+      "keycode": "M12",
+      "label": "M",
+      "sublabel": "12",
+      "type": "macro",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_I)",
+      "label": "I",
+      "sublabel": "LC+LA+LG",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_F)",
+      "label": "F",
+      "sublabel": "LC+LA+LG",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_P)",
+      "label": "P",
+      "sublabel": "LC+LA+LG",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_O)",
+      "label": "O",
+      "sublabel": "LC+LA+LG",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_A)",
+      "label": "A",
+      "sublabel": "LC+LA+LG",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_J)",
+      "label": "J",
+      "sublabel": "LC+LA+LG",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_C)",
+      "label": "C",
+      "sublabel": "LC+LA+LG",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_B)",
+      "label": "B",
+      "sublabel": "LC+LA+LG",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_D)",
+      "label": "D",
+      "sublabel": "LC+LA+LG",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_G)",
+      "label": "G",
+      "sublabel": "LC+LA+LG",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_E)",
+      "label": "E",
+      "sublabel": "LC+LA+LG",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_H)",
+      "label": "H",
+      "sublabel": "LC+LA+LG",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_M)",
+      "label": "M",
+      "sublabel": "LC+LA+LG",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 5,
+   "rows": [
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "SGUI(KC_4)",
+      "label": "$",
+      "sublabel": "S+G",
+      "secondaryLabel": "4",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "M1",
+      "label": "M",
+      "sublabel": "1",
+      "type": "macro",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCTL(KC_F3)",
+      "label": "F3",
+      "sublabel": "LCtrl",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "M0",
+      "label": "M",
+      "sublabel": "0",
+      "type": "macro",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "OSL(8)",
+      "label": "OSL",
+      "sublabel": "8",
+      "type": "layer",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_U)",
+      "label": "U",
+      "sublabel": "LC+LA+LG",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_L)",
+      "label": "L",
+      "sublabel": "LC+LA+LG",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_N)",
+      "label": "N",
+      "sublabel": "LC+LA+LG",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCG(KC_3)",
+      "label": "#",
+      "sublabel": "LC+LG",
+      "secondaryLabel": "3",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCG(KC_2)",
+      "label": "@",
+      "sublabel": "LC+LG",
+      "secondaryLabel": "2",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCG(KC_1)",
+      "label": "!",
+      "sublabel": "LC+LG",
+      "secondaryLabel": "1",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_ESCAPE",
+      "label": "Esc",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "M15",
+      "label": "M",
+      "sublabel": "15",
+      "type": "macro",
+      "isEmpty": false
+     },
+     {
+      "keycode": "M14",
+      "label": "M",
+      "sublabel": "14",
+      "type": "macro",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_J",
+      "label": "J",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCG(KC_0)",
+      "label": ")",
+      "sublabel": "LC+LG",
+      "secondaryLabel": "0",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCTL(KC_F2)",
+      "label": "F2",
+      "sublabel": "LCtrl",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCG(KC_9)",
+      "label": "(",
+      "sublabel": "LC+LG",
+      "secondaryLabel": "9",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCG(KC_8)",
+      "label": "*",
+      "sublabel": "LC+LG",
+      "secondaryLabel": "8",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCG(KC_7)",
+      "label": "&",
+      "sublabel": "LC+LG",
+      "secondaryLabel": "7",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 6,
+   "rows": [
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_Q)",
+      "label": "Q",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_W)",
+      "label": "W",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_E)",
+      "label": "E",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_R)",
+      "label": "R",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_T)",
+      "label": "T",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_A)",
+      "label": "A",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_S)",
+      "label": "S",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_D)",
+      "label": "D",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_F)",
+      "label": "F",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_G)",
+      "label": "G",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_Z)",
+      "label": "Z",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_X)",
+      "label": "X",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_C)",
+      "label": "C",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_V)",
+      "label": "V",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_B)",
+      "label": "B",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_P)",
+      "label": "P",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_O)",
+      "label": "O",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_I)",
+      "label": "I",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_U)",
+      "label": "U",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_Y)",
+      "label": "Y",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_L)",
+      "label": "L",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_K)",
+      "label": "K",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_J)",
+      "label": "J",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_H)",
+      "label": "H",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_M)",
+      "label": "M",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LSFT(KC_N)",
+      "label": "N",
+      "sublabel": "LShift",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 7,
+   "rows": [
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_Q)",
+      "label": "Q",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_W)",
+      "label": "W",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_E)",
+      "label": "E",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_R)",
+      "label": "R",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_T)",
+      "label": "T",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_A)",
+      "label": "A",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_S)",
+      "label": "S",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_D)",
+      "label": "D",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_F)",
+      "label": "F",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_G)",
+      "label": "G",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_Z)",
+      "label": "Z",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_X)",
+      "label": "X",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_C)",
+      "label": "C",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_V)",
+      "label": "V",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_B)",
+      "label": "B",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_Z)",
+      "label": "Z",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "SGUI(KC_Z)",
+      "label": "Z",
+      "sublabel": "S+G",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_P)",
+      "label": "P",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_O)",
+      "label": "O",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_I)",
+      "label": "I",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_U)",
+      "label": "U",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_Y)",
+      "label": "Y",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_L)",
+      "label": "L",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_K)",
+      "label": "K",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_J)",
+      "label": "J",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_H)",
+      "label": "H",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_M)",
+      "label": "M",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LGUI(KC_N)",
+      "label": "N",
+      "sublabel": "LGui",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 8,
+   "rows": [
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCG(KC_Q)",
+      "label": "Q",
+      "sublabel": "LC+LG",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "USER00",
+      "label": "BT0",
+      "type": "special",
+      "isEmpty": false
+     },
+     {
+      "keycode": "USER01",
+      "label": "BT1",
+      "type": "special",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_3)",
+      "label": "#",
+      "sublabel": "LC+LA+LG",
+      "secondaryLabel": "3",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_2)",
+      "label": "@",
+      "sublabel": "LC+LA+LG",
+      "secondaryLabel": "2",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_1)",
+      "label": "!",
+      "sublabel": "LC+LA+LG",
+      "secondaryLabel": "1",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_6)",
+      "label": "^",
+      "sublabel": "LC+LA+LG",
+      "secondaryLabel": "6",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_5)",
+      "label": "%",
+      "sublabel": "LC+LA+LG",
+      "secondaryLabel": "5",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_4)",
+      "label": "$",
+      "sublabel": "LC+LA+LG",
+      "secondaryLabel": "4",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_0)",
+      "label": ")",
+      "sublabel": "LC+LA+LG",
+      "secondaryLabel": "0",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_9)",
+      "label": "(",
+      "sublabel": "LC+LA+LG",
+      "secondaryLabel": "9",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_8)",
+      "label": "*",
+      "sublabel": "LC+LA+LG",
+      "secondaryLabel": "8",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "LCAG(KC_7)",
+      "label": "&",
+      "sublabel": "LC+LA+LG",
+      "secondaryLabel": "7",
+      "type": "modifier",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  },
+  {
+   "index": 9,
+   "rows": [
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_WH_L",
+      "label": "WhlL",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_MS_U",
+      "label": "MsUp",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_WH_R",
+      "label": "WhlR",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_MS_L",
+      "label": "MsL",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_MS_D",
+      "label": "MsDn",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_MS_R",
+      "label": "MsR",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_WH_U",
+      "label": "WhlUp",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_WH_D",
+      "label": "WhlDn",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_VOLU",
+      "label": "Vol+",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_VOLD",
+      "label": "Vol-",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_BTN2",
+      "label": "Mouse2",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ],
+    [
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_ACL2",
+      "label": "ACL2",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_TRNS",
+      "label": "▽",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "KC_BTN1",
+      "label": "Mouse1",
+      "type": "normal",
+      "isEmpty": false
+     },
+     {
+      "keycode": "-1",
+      "label": "",
+      "type": "empty",
+      "isEmpty": true
+     }
+    ]
+   ]
+  }
+ ],
+ "encoders": [
+  {
+   "layer": 0,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_TRNS",
+   "clockwise": "KC_TRNS"
+  },
+  {
+   "layer": 0,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_TRNS",
+   "clockwise": "KC_TRNS"
+  },
+  {
+   "layer": 1,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_TRNS",
+   "clockwise": "KC_TRNS"
+  },
+  {
+   "layer": 1,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_TRNS",
+   "clockwise": "KC_TRNS"
+  },
+  {
+   "layer": 2,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_TRNS",
+   "clockwise": "KC_TRNS"
+  },
+  {
+   "layer": 2,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_TRNS",
+   "clockwise": "KC_TRNS"
+  },
+  {
+   "layer": 3,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  },
+  {
+   "layer": 3,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_NO",
+   "clockwise": "KC_NO"
+  },
+  {
+   "layer": 4,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_TRNS",
+   "clockwise": "KC_TRNS"
+  },
+  {
+   "layer": 4,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_TRNS",
+   "clockwise": "KC_TRNS"
+  },
+  {
+   "layer": 5,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_TRNS",
+   "clockwise": "KC_TRNS"
+  },
+  {
+   "layer": 5,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_TRNS",
+   "clockwise": "KC_TRNS"
+  },
+  {
+   "layer": 6,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_TRNS",
+   "clockwise": "KC_TRNS"
+  },
+  {
+   "layer": 6,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_TRNS",
+   "clockwise": "KC_TRNS"
+  },
+  {
+   "layer": 7,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_TRNS",
+   "clockwise": "KC_TRNS"
+  },
+  {
+   "layer": 7,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_TRNS",
+   "clockwise": "KC_TRNS"
+  },
+  {
+   "layer": 8,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_TRNS",
+   "clockwise": "KC_TRNS"
+  },
+  {
+   "layer": 8,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_TRNS",
+   "clockwise": "KC_TRNS"
+  },
+  {
+   "layer": 9,
+   "encoderIndex": 0,
+   "counterClockwise": "KC_TRNS",
+   "clockwise": "KC_TRNS"
+  },
+  {
+   "layer": 9,
+   "encoderIndex": 1,
+   "counterClockwise": "KC_TRNS",
+   "clockwise": "KC_TRNS"
+  }
+ ],
+ "macros": [
+  {
+   "index": 0,
+   "actions": [
+    {
+     "type": "down",
+     "keys": [
+      "KC_LGUI"
+     ]
+    },
+    {
+     "type": "tap",
+     "keys": [
+      "KC_SPACE"
+     ]
+    },
+    {
+     "type": "up",
+     "keys": [
+      "KC_LGUI"
+     ]
+    },
+    {
+     "type": "tap",
+     "keys": [
+      "KC_LANG2"
+     ]
+    }
+   ],
+   "isEmpty": false
+  },
+  {
+   "index": 1,
+   "actions": [
+    {
+     "type": "down",
+     "keys": [
+      "KC_LGUI"
+     ]
+    },
+    {
+     "type": "tap",
+     "keys": [
+      "KC_SPACE"
+     ]
+    },
+    {
+     "type": "delay",
+     "keys": [
+      50
+     ]
+    },
+    {
+     "type": "tap",
+     "keys": [
+      "KC_4"
+     ]
+    },
+    {
+     "type": "up",
+     "keys": [
+      "KC_LGUI"
+     ]
+    }
+   ],
+   "isEmpty": false
+  },
+  {
+   "index": 2,
+   "actions": [
+    {
+     "type": "tap",
+     "keys": [
+      "KC_LANG1",
+      "KC_COMMA",
+      "KC_ENTER"
+     ]
+    }
+   ],
+   "isEmpty": false
+  },
+  {
+   "index": 3,
+   "actions": [
+    {
+     "type": "tap",
+     "keys": [
+      "KC_LANG1",
+      "KC_DOT",
+      "KC_ENTER"
+     ]
+    }
+   ],
+   "isEmpty": false
+  },
+  {
+   "index": 4,
+   "actions": [
+    {
+     "type": "tap",
+     "keys": [
+      "KC_LANG2"
+     ]
+    },
+    {
+     "type": "down",
+     "keys": [
+      "KC_LSHIFT"
+     ]
+    },
+    {
+     "type": "tap",
+     "keys": [
+      "KC_9",
+      "KC_0"
+     ]
+    },
+    {
+     "type": "up",
+     "keys": [
+      "KC_LSHIFT"
+     ]
+    },
+    {
+     "type": "tap",
+     "keys": [
+      "KC_LEFT"
+     ]
+    }
+   ],
+   "isEmpty": false
+  },
+  {
+   "index": 5,
+   "actions": [
+    {
+     "type": "tap",
+     "keys": [
+      "KC_LANG2",
+      "KC_KP_ASTERISK",
+      "KC_SPACE"
+     ]
+    }
+   ],
+   "isEmpty": false
+  },
+  {
+   "index": 6,
+   "actions": [
+    {
+     "type": "tap",
+     "keys": [
+      "KC_LANG2",
+      "KC_1",
+      "KC_DOT",
+      "KC_SPACE"
+     ]
+    }
+   ],
+   "isEmpty": false
+  },
+  {
+   "index": 7,
+   "actions": [
+    {
+     "type": "down",
+     "keys": [
+      "KC_LGUI",
+      "KC_LSHIFT"
+     ]
+    },
+    {
+     "type": "tap",
+     "keys": [
+      "KC_LEFT"
+     ]
+    },
+    {
+     "type": "up",
+     "keys": [
+      "KC_LGUI",
+      "KC_LSHIFT"
+     ]
+    },
+    {
+     "type": "tap",
+     "keys": [
+      "KC_BSPACE"
+     ]
+    }
+   ],
+   "isEmpty": false
+  },
+  {
+   "index": 8,
+   "actions": [
+    {
+     "type": "tap",
+     "keys": [
+      "KC_SPACE",
+      "KC_SPACE",
+      "KC_SPACE",
+      "KC_SPACE"
+     ]
+    }
+   ],
+   "isEmpty": false
+  },
+  {
+   "index": 9,
+   "actions": [
+    {
+     "type": "tap",
+     "keys": [
+      "KC_UP",
+      "KC_UP",
+      "KC_UP",
+      "KC_UP",
+      "KC_UP",
+      "KC_UP",
+      "KC_UP",
+      "KC_UP",
+      "KC_UP",
+      "KC_UP"
+     ]
+    }
+   ],
+   "isEmpty": false
+  },
+  {
+   "index": 10,
+   "actions": [
+    {
+     "type": "tap",
+     "keys": [
+      "KC_DOWN",
+      "KC_DOWN",
+      "KC_DOWN",
+      "KC_DOWN",
+      "KC_DOWN",
+      "KC_DOWN",
+      "KC_DOWN",
+      "KC_DOWN",
+      "KC_DOWN",
+      "KC_DOWN"
+     ]
+    }
+   ],
+   "isEmpty": false
+  },
+  {
+   "index": 11,
+   "actions": [
+    {
+     "type": "tap",
+     "keys": [
+      "KC_ESCAPE",
+      "KC_ESCAPE",
+      "KC_ESCAPE"
+     ]
+    }
+   ],
+   "isEmpty": false
+  },
+  {
+   "index": 12,
+   "actions": [
+    {
+     "type": "down",
+     "keys": [
+      "KC_LALT",
+      "KC_LGUI"
+     ]
+    },
+    {
+     "type": "tap",
+     "keys": [
+      "KC_TAB"
+     ]
+    },
+    {
+     "type": "up",
+     "keys": [
+      "KC_LALT",
+      "KC_LGUI"
+     ]
+    }
+   ],
+   "isEmpty": false
+  },
+  {
+   "index": 13,
+   "actions": [
+    {
+     "type": "down",
+     "keys": [
+      "KC_LALT",
+      "KC_LGUI",
+      "KC_LSHIFT"
+     ]
+    },
+    {
+     "type": "tap",
+     "keys": [
+      "KC_TAB"
+     ]
+    },
+    {
+     "type": "up",
+     "keys": [
+      "KC_LALT",
+      "KC_LGUI",
+      "KC_LSHIFT"
+     ]
+    }
+   ],
+   "isEmpty": false
+  },
+  {
+   "index": 14,
+   "actions": [
+    {
+     "type": "tap",
+     "keys": [
+      "KC_ESCAPE",
+      "KC_ESCAPE",
+      "KC_ESCAPE"
+     ]
+    },
+    {
+     "type": "down",
+     "keys": [
+      "KC_LCTRL",
+      "KC_LGUI"
+     ]
+    },
+    {
+     "type": "tap",
+     "keys": [
+      "KC_4"
+     ]
+    },
+    {
+     "type": "up",
+     "keys": [
+      "KC_LCTRL",
+      "KC_LGUI"
+     ]
+    }
+   ],
+   "isEmpty": false
+  },
+  {
+   "index": 15,
+   "actions": [
+    {
+     "type": "tap",
+     "keys": [
+      "KC_ESCAPE",
+      "KC_ESCAPE",
+      "KC_ESCAPE"
+     ]
+    },
+    {
+     "type": "down",
+     "keys": [
+      "KC_LCTRL",
+      "KC_LGUI"
+     ]
+    },
+    {
+     "type": "tap",
+     "keys": [
+      "KC_5"
+     ]
+    },
+    {
+     "type": "up",
+     "keys": [
+      "KC_LCTRL",
+      "KC_LGUI"
+     ]
+    }
+   ],
+   "isEmpty": false
+  },
+  {
+   "index": 16,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 17,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 18,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 19,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 20,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 21,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 22,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 23,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 24,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 25,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 26,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 27,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 28,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 29,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 30,
+   "actions": [],
+   "isEmpty": true
+  },
+  {
+   "index": 31,
+   "actions": [],
+   "isEmpty": true
+  }
+ ],
+ "tapDance": [
+  {
+   "index": 0,
+   "tap": "KC_LBRACKET",
+   "hold": "KC_NO",
+   "doubleTap": "KC_RBRACKET",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": false
+  },
+  {
+   "index": 1,
+   "tap": "LSFT(KC_LBRACKET)",
+   "hold": "KC_NO",
+   "doubleTap": "LSFT(KC_RBRACKET)",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": false
+  },
+  {
+   "index": 2,
+   "tap": "LSFT(KC_9)",
+   "hold": "KC_NO",
+   "doubleTap": "LSFT(KC_0)",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": false
+  },
+  {
+   "index": 3,
+   "tap": "LSFT(KC_COMMA)",
+   "hold": "KC_NO",
+   "doubleTap": "LSFT(KC_DOT)",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": false
+  },
+  {
+   "index": 4,
+   "tap": "LCAG(KC_F)",
+   "hold": "KC_NO",
+   "doubleTap": "LCAG(KC_U)",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": false
+  },
+  {
+   "index": 5,
+   "tap": "LCAG(KC_P)",
+   "hold": "KC_NO",
+   "doubleTap": "LCAG(KC_O)",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": false
+  },
+  {
+   "index": 6,
+   "tap": "OSL(4)",
+   "hold": "KC_NO",
+   "doubleTap": "KC_ESCAPE",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": false
+  },
+  {
+   "index": 7,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 8,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 9,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 10,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 11,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 12,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 13,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 14,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 15,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 16,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 17,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 18,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 19,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 20,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 21,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 22,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 23,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 24,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 25,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 26,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 27,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 28,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 29,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 30,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  },
+  {
+   "index": 31,
+   "tap": "KC_NO",
+   "hold": "KC_NO",
+   "doubleTap": "KC_NO",
+   "tapHold": "KC_NO",
+   "tappingTerm": 250,
+   "isEmpty": true
+  }
+ ],
+ "combos": [
+  {
+   "index": 0,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 1,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 2,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 3,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 4,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 5,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 6,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 7,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 8,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 9,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 10,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 11,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 12,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 13,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 14,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 15,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 16,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 17,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 18,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 19,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 20,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 21,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 22,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 23,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 24,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 25,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 26,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 27,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 28,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 29,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 30,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  },
+  {
+   "index": 31,
+   "keys": [],
+   "output": "KC_NO",
+   "isEmpty": true
+  }
+ ],
+ "settings": {
+  "2": 50,
+  "6": 1000,
+  "7": 180,
+  "18": 20,
+  "19": 20,
+  "22": 1,
+  "23": 0,
+  "26": 1,
+  "27": 120
+ }
+}

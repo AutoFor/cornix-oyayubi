@@ -1,0 +1,228 @@
+<title>Cornix 親指シフト配列表</title>
+<style>
+  :root {
+    --paper: #F4F5F2;
+    --cap: #FDFDFC;
+    --cap-edge: #D8DBD6;
+    --ink: #24272A;
+    --sub: #8A9088;
+    --left: #33628C;
+    --right: #B44A2A;
+    --left-bg: rgba(51, 98, 140, 0.08);
+    --right-bg: rgba(180, 74, 42, 0.08);
+    --thumb-cap: #EDEFEA;
+    --shadow: 0 1px 2px rgba(36, 39, 42, 0.10), 0 2px 6px rgba(36, 39, 42, 0.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #17191C;
+      --cap: #23272C;
+      --cap-edge: #34393F;
+      --ink: #E8E9E6;
+      --sub: #7B8278;
+      --left: #85AED4;
+      --right: #E08D68;
+      --left-bg: rgba(133, 174, 212, 0.10);
+      --right-bg: rgba(224, 141, 104, 0.10);
+      --thumb-cap: #1D2125;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #17191C;
+    --cap: #23272C;
+    --cap-edge: #34393F;
+    --ink: #E8E9E6;
+    --sub: #7B8278;
+    --left: #85AED4;
+    --right: #E08D68;
+    --left-bg: rgba(133, 174, 212, 0.10);
+    --right-bg: rgba(224, 141, 104, 0.10);
+    --thumb-cap: #1D2125;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  }
+  :root[data-theme="light"] {
+    --paper: #F4F5F2;
+    --cap: #FDFDFC;
+    --cap-edge: #D8DBD6;
+    --ink: #24272A;
+    --sub: #8A9088;
+    --left: #33628C;
+    --right: #B44A2A;
+    --left-bg: rgba(51, 98, 140, 0.08);
+    --right-bg: rgba(180, 74, 42, 0.08);
+    --thumb-cap: #EDEFEA;
+    --shadow: 0 1px 2px rgba(36, 39, 42, 0.10), 0 2px 6px rgba(36, 39, 42, 0.05);
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic UI", "Noto Sans JP", "Meiryo", sans-serif;
+    margin: 0;
+    padding: 28px 20px 48px;
+  }
+  .wrap { max-width: 1040px; margin: 0 auto; }
+
+  header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 20px; margin-bottom: 6px; }
+  h1 { font-size: 22px; font-weight: 700; margin: 0; letter-spacing: 0.02em; }
+  .subtitle { color: var(--sub); font-size: 12.5px; letter-spacing: 0.04em; }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 14px 0 22px; font-size: 12.5px; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .chip { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+  .chip.t { background: var(--ink); }
+  .chip.l { background: var(--left); }
+  .chip.r { background: var(--right); }
+
+  .board-scroll { overflow-x: auto; padding-bottom: 6px; }
+  .board { display: flex; gap: 44px; width: max-content; margin: 0 auto; }
+  .half { display: flex; flex-direction: column; gap: 7px; }
+  .row { display: flex; gap: 7px; }
+  .half.right .row { justify-content: flex-start; }
+  .half.left .row { justify-content: flex-end; }
+
+  .key {
+    width: 76px; height: 76px;
+    background: var(--cap);
+    border: 1px solid var(--cap-edge);
+    border-radius: 9px;
+    box-shadow: var(--shadow);
+    position: relative;
+    display: flex; flex-direction: column;
+    box-sizing: border-box;
+    padding: 6px 7px 5px;
+  }
+  .key .ltr {
+    position: absolute; top: 5px; right: 8px;
+    font-family: "SF Mono", "Cascadia Code", Consolas, monospace;
+    font-size: 10.5px; color: var(--sub);
+  }
+  .key .t {
+    font-size: 27px; font-weight: 700; line-height: 1;
+    margin: 8px 0 0 2px;
+  }
+  .key .planes {
+    margin-top: auto;
+    display: flex; justify-content: space-between; align-items: flex-end;
+    font-size: 15.5px; font-weight: 600; line-height: 1;
+  }
+  .key .pl { color: var(--left); background: var(--left-bg); border-radius: 5px; padding: 3px 5px; }
+  .key .pr { color: var(--right); background: var(--right-bg); border-radius: 5px; padding: 3px 5px; }
+  .key .none { color: var(--cap-edge); background: none; font-weight: 400; }
+
+  .thumbrow { display: flex; gap: 7px; margin-top: 10px; }
+  .half.left .thumbrow { justify-content: flex-end; }
+  .thumb {
+    height: 46px; border-radius: 9px;
+    border: 1.5px solid; box-shadow: var(--shadow);
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 0 18px; background: var(--thumb-cap);
+    font-size: 14px; font-weight: 700;
+  }
+  .thumb small { font-weight: 400; font-size: 11px; color: var(--sub); }
+  .thumb.l { border-color: var(--left); color: var(--left); }
+  .thumb.r { border-color: var(--right); color: var(--right); }
+
+  .notes {
+    margin-top: 30px;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 10px;
+  }
+  .note {
+    background: var(--cap); border: 1px solid var(--cap-edge); border-radius: 9px;
+    padding: 12px 14px; font-size: 12.5px; line-height: 1.75;
+  }
+  .note b { display: block; font-size: 11px; letter-spacing: 0.09em; color: var(--sub); margin-bottom: 4px; }
+  .note .kl { color: var(--left); font-weight: 700; }
+  .note .kr { color: var(--right); font-weight: 700; }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Cornix 親指シフト配列表</h1>
+    <span class="subtitle">NICOLA-J ／ zmk-nicola ／ 2026-07-07 現在</span>
+  </header>
+
+  <div class="legend">
+    <span><span class="chip t"></span>単独打鍵（中央・大）</span>
+    <span><span class="chip l"></span>左親指（Space）と同時 → 左下</span>
+    <span><span class="chip r"></span>右親指（変換）と同時 → 右下</span>
+  </div>
+
+  <div class="board-scroll">
+    <div class="board">
+      <div class="half left">
+        <div class="row">
+          <div class="key"><span class="ltr">Q</span><span class="t">。</span><div class="planes"><span class="pl">ぁ</span><span class="none">−</span></div></div>
+          <div class="key"><span class="ltr">W</span><span class="t">か</span><div class="planes"><span class="pl">え</span><span class="pr">が</span></div></div>
+          <div class="key"><span class="ltr">E</span><span class="t">た</span><div class="planes"><span class="pl">り</span><span class="pr">だ</span></div></div>
+          <div class="key"><span class="ltr">R</span><span class="t">こ</span><div class="planes"><span class="pl">ゃ</span><span class="pr">ご</span></div></div>
+          <div class="key"><span class="ltr">T</span><span class="t">さ</span><div class="planes"><span class="pl">れ</span><span class="pr">ざ</span></div></div>
+        </div>
+        <div class="row">
+          <div class="key"><span class="ltr">A</span><span class="t">う</span><div class="planes"><span class="pl">を</span><span class="pr">ゔ</span></div></div>
+          <div class="key"><span class="ltr">S</span><span class="t">し</span><div class="planes"><span class="pl">あ</span><span class="pr">じ</span></div></div>
+          <div class="key"><span class="ltr">D</span><span class="t">て</span><div class="planes"><span class="pl">な</span><span class="pr">で</span></div></div>
+          <div class="key"><span class="ltr">F</span><span class="t">け</span><div class="planes"><span class="pl">ゅ</span><span class="pr">げ</span></div></div>
+          <div class="key"><span class="ltr">G</span><span class="t">せ</span><div class="planes"><span class="pl">も</span><span class="pr">ぜ</span></div></div>
+        </div>
+        <div class="row">
+          <div class="key"><span class="ltr">Z</span><span class="t">。</span><div class="planes"><span class="pl">ぅ</span><span class="none">−</span></div></div>
+          <div class="key"><span class="ltr">X</span><span class="t">ひ</span><div class="planes"><span class="pl">ー</span><span class="pr">び</span></div></div>
+          <div class="key"><span class="ltr">C</span><span class="t">す</span><div class="planes"><span class="pl">ろ</span><span class="pr">ず</span></div></div>
+          <div class="key"><span class="ltr">V</span><span class="t">ふ</span><div class="planes"><span class="pl">や</span><span class="pr">ぶ</span></div></div>
+          <div class="key"><span class="ltr">B</span><span class="t">へ</span><div class="planes"><span class="pl">ぃ</span><span class="pr">べ</span></div></div>
+        </div>
+        <div class="thumbrow">
+          <div class="thumb l">左親指シフト<small>Spaceキー ／ 単独タップ = Space</small></div>
+        </div>
+      </div>
+
+      <div class="half right">
+        <div class="row">
+          <div class="key"><span class="ltr">Y</span><span class="t">ら</span><div class="planes"><span class="pl">ぱ</span><span class="pr">よ</span></div></div>
+          <div class="key"><span class="ltr">U</span><span class="t">ち</span><div class="planes"><span class="pl">ぢ</span><span class="pr">に</span></div></div>
+          <div class="key"><span class="ltr">I</span><span class="t">く</span><div class="planes"><span class="pl">ぐ</span><span class="pr">る</span></div></div>
+          <div class="key"><span class="ltr">O</span><span class="t">つ</span><div class="planes"><span class="pl">づ</span><span class="pr">ま</span></div></div>
+          <div class="key"><span class="ltr">P</span><span class="t">、</span><div class="planes"><span class="pl">ぴ</span><span class="pr">ぇ</span></div></div>
+          <div class="key"><span class="ltr">@</span><span class="t">BSpc</span><div class="planes"><span class="none">−</span><span class="none">−</span></div></div>
+        </div>
+        <div class="row">
+          <div class="key"><span class="ltr">H</span><span class="t">は</span><div class="planes"><span class="pl">ば</span><span class="pr">み</span></div></div>
+          <div class="key"><span class="ltr">J</span><span class="t">と</span><div class="planes"><span class="pl">ど</span><span class="pr">お</span></div></div>
+          <div class="key"><span class="ltr">K</span><span class="t">き</span><div class="planes"><span class="pl">ぎ</span><span class="pr">の</span></div></div>
+          <div class="key"><span class="ltr">L</span><span class="t">い</span><div class="planes"><span class="pl">ぽ</span><span class="pr">ょ</span></div></div>
+          <div class="key"><span class="ltr">;</span><span class="t">ん</span><div class="planes"><span class="none">−</span><span class="pr">っ</span></div></div>
+        </div>
+        <div class="row">
+          <div class="key"><span class="ltr">N</span><span class="t">め</span><div class="planes"><span class="pl">ぷ</span><span class="pr">ぬ</span></div></div>
+          <div class="key"><span class="ltr">M</span><span class="t">そ</span><div class="planes"><span class="pl">ぞ</span><span class="pr">ゆ</span></div></div>
+          <div class="key"><span class="ltr">,</span><span class="t">ね</span><div class="planes"><span class="pl">ぺ</span><span class="pr">む</span></div></div>
+          <div class="key"><span class="ltr">.</span><span class="t">ほ</span><div class="planes"><span class="pl">ぼ</span><span class="pr">わ</span></div></div>
+          <div class="key"><span class="ltr">/</span><span class="t">／</span><div class="planes"><span class="pl">？</span><span class="pr">ぉ</span></div></div>
+        </div>
+        <div class="thumbrow">
+          <div class="thumb r">右親指シフト<small>変換キー ／ 単独タップ = 変換</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="notes">
+    <div class="note"><b>おぼえ方</b>
+      <span class="kr">反対の手</span>の親指と同時 → 濁音（K＋左親指=ぎ）。<span class="kl">同じ手</span>の親指と同時 → シフト面のかな（K＋右親指=の）。
+    </div>
+    <div class="note"><b>よく使う</b>
+      ん = ;単独 ／ っ = <span class="kr">右親指</span>＋; ／ ー = <span class="kl">左親指</span>＋X ／ 読点、 = P ／ 句点。 = Q・Z
+    </div>
+    <div class="note"><b>切替キー（親）</b>
+      右親指・内側から3番目（旧・全角キーの位置。2026-07-22に移動）。タップのみでレイヤー切替（Base⇄NICOLA）。IMEには一切関与しない。
+    </div>
+    <div class="note"><b>半角/全角キー</b>
+      左手・中段・外側から1番目（旧BSpcの位置。2026-07-22に移動）。IME切替専用（レイヤーとは独立）。切替直後のIMEズレはこのキーで直す。
+    </div>
+    <div class="note"><b>現在の設定</b>
+      同時打鍵判定窓 100ms（先判定）／ 連続シフト オフ ／ %方式ビルドは -Branch oyayubi-pct
+    </div>
+  </div>
+</div>
