@@ -63,7 +63,8 @@ fork やビルド環境の構築は不要です（fork が必要になるケー�
 - 設定の**エクスポート/インポート**（買い替え・複数台への引き継ぎ用）
 
 キー配列そのもの（どのキーに何を割り当てるか・レイヤー構成）も、同じく USB 接続だけで
-**[ZMK Studio](https://zmk.dev/docs/features/studio)** から編集・保存できます（再ビルド不要）。
+**[ZMK Studio](https://zmk.studio/)**（ブラウザで開いてキーをクリックで編集）から変更・保存できます
+（再ビルド不要。[使い方ドキュメント](https://zmk.dev/docs/features/studio)）。
 ZMK Studio は分割キーボードの「central」側のみ対応のため、繋ぐ先は構成で変わります:
 
 - **ドングルなし構成**: 左手（`cornix_left`）を USB 接続
