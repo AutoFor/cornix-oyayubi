@@ -28,6 +28,23 @@ fork やビルド環境の構築は不要です（fork が必要になるケー�
 
 ### ステップ2: キーボードに書き込む（左右それぞれ・初回のみ）
 
+**方法A（推奨・コピペ1行で全自動）** — ステップ1のダウンロードも不要。書き込み前に純正ファームの
+バックアップも自動保存されます:
+
+- **Windows**: PowerShell を開いて次の1行を貼り付けて実行
+  ```powershell
+  iex (New-Object Net.WebClient).DownloadString('https://autofor.github.io/cornix-oyayubi/flash.ps1')
+  ```
+- **macOS / Linux**: ターミナルを開いて次の1行を貼り付けて実行
+  ```bash
+  curl -fsSL https://autofor.github.io/cornix-oyayubi/flash.sh | bash
+  ```
+
+あとは画面の指示に従って、左手→右手の順に本体のリセットボタンを**素早く2回**押すだけです
+（fork で使う場合は `-Repo you/your-fork` / `REPO=you/your-fork` で自分の fork を指定）。
+
+**方法B（手動・ドラッグ&ドロップ）** — スクリプトを使いたくない場合:
+
 > **⚠️ 書き込み前のバックアップ（推奨）**: 書き込むと純正ファームは消えます。
 > 手順2でドライブが現れたら、新しい UF2 を入れる**前に**、ドライブ内の `CURRENT.UF2` を
 > PC にコピーして保存してください（左右それぞれ。`left`/`right` が分かる名前に変えておくと安心）。
@@ -106,10 +123,10 @@ fork してビルドする手順:
 - **ファームは UF2** なので OS 非依存。キーボードをブートローダ（リセット2回押し）にして、
   現れた USB ドライブに UF2 をドラッグ&ドロップすれば焼けます（Windows/macOS共通、CLIツール不要）。
   これだけで初回セットアップは完了します。
-- 毎回GitHub Actionsのページから手動ダウンロードするのが面倒な場合のみ、任意のショートカットとして
-  以下のスクリプトが使えます（どちらも `gh` CLI のインストール・ログインが必要）:
-  - **Windows**: `tools/flash-cornix.ps1`（最新CIビルドを取得して自動書き込み）
-  - **macOS / Linux**: `tools/flash-cornix.sh`（同等）
+- 最短は Quick start ステップ2の**コピペ1行スクリプト**（`docs/flash.ps1` / `docs/flash.sh`。
+  最新リリースの取得〜左右の書き込み〜事前バックアップまで全自動、前提ツールなし）。
+- 開発者向け: リリース前のCIビルド(Artifacts)から取得する `tools/flash-cornix.ps1` /
+  `tools/flash-cornix.sh` もあります（こちらは `gh` CLI のインストール・ログインが必要）。
 
 ## Repo layout / 構成
 
