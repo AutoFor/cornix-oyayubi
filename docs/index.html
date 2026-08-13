@@ -52,8 +52,8 @@
 <body>
 <div class="wrap">
   <h1>Cornix 親指シフト設定</h1>
-  <p class="lead">ZMK Studioでは変えられない設定をここから変更できます。「保存してビルド」を押すと
-  GitHubにコミットされ自動ビルドが走ります（約2.5分）。あとはPCで <code>.\flash-cornix.ps1</code> を実行するだけ。</p>
+  <p class="lead">ZMK Studioでは変えられない設定をここから変更できます。<b>キーボード（左手側）をUSBで
+  繋ぐだけ</b>— アカウントやトークンの準備は不要で、動かした設定はその場でキーボードに保存されます。</p>
 
   <div class="card">
     <h2>⚡ USB直結モード（ビルド・書き込み不要）</h2>
@@ -74,16 +74,25 @@
   </div>
 
   <div class="card">
-    <h2>接続設定（GitHubモード・初回のみ）</h2>
-    <div class="row">
-      <input type="password" id="token" placeholder="GitHub Personal Access Token">
-      <button class="ghost" id="loadBtn">現在の設定を読み込む</button>
-    </div>
     <details>
-      <summary>トークンの作り方</summary>
-      <p>GitHub → Settings → Developer settings → Personal access tokens → <b>Tokens (classic)</b> →
-      Generate new token → スコープ <b>repo</b> にチェック → 生成された ghp_... をここに貼る。<br>
-      トークンはこのブラウザのlocalStorageにのみ保存され、GitHub API以外には送信されません。</p>
+      <summary><b>🔧 GitHubモード（上級者向け・通常は不要）</b> — リポジトリの既定値をこの画面からコミットする</summary>
+      <p class="hint" style="margin-top:10px">USB直結モードで足りるならこのモードは不要です。リポジトリの
+      <code>config/cornix.keymap</code> の既定値をこの画面から書き換えてコミットし、自動ビルドまで走らせたい
+      人向けで、対象リポジトリへの push 権限と Personal Access Token が必要です。<br>
+      <b>トークンを作りたくない場合</b>: GitHub の Web 画面で
+      <a href="https://github.com/AutoFor/cornix-oyayubi/edit/main/config/cornix.keymap" target="_blank" rel="noopener">config/cornix.keymap を直接編集</a>
+      しても同じことができます（コミットすると自動ビルドされ、Releases に UF2 が反映されます。
+      fork 利用の場合は自分の fork 側で編集）。</p>
+      <div class="row">
+        <input type="password" id="token" placeholder="GitHub Personal Access Token">
+        <button class="ghost" id="loadBtn">現在の設定を読み込む</button>
+      </div>
+      <details>
+        <summary>トークンの作り方</summary>
+        <p>GitHub → Settings → Developer settings → Personal access tokens → <b>Tokens (classic)</b> →
+        Generate new token → スコープ <b>repo</b> にチェック → 生成された ghp_... をここに貼る。<br>
+        トークンはこのブラウザのlocalStorageにのみ保存され、GitHub API以外には送信されません。</p>
+      </details>
     </details>
   </div>
 
