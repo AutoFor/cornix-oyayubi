@@ -66,7 +66,8 @@
     親指シフトキーのタップ出力の変更は2026-07以降のファームが必要です（それ以前はGitHubモードで）。</p>
     <div class="toggle" style="margin-top:12px">
       <input type="checkbox" id="logToggle" disabled>
-      <span>動作ログを表示（同時打鍵の判定・出力かなをリアルタイム表示）</span>
+      <span>動作ログを表示（判定・出力かなを起動からのms時刻つきで表示。オンはキーボードに保存され常時有効）</span>
+      <button class="ghost" id="logSave" disabled style="padding:6px 12px; font-size:12px">.logで保存</button>
     </div>
     <pre id="usbLog" style="display:none; max-height:220px; overflow-y:auto; background:var(--paper);
       border:1px solid var(--edge); border-radius:8px; padding:10px 12px; font-size:12px;
@@ -318,6 +319,7 @@ function usbResetUi(msg) {
   $("usbState").textContent = msg || "切断されました";
   $("logToggle").disabled = true;
   $("logToggle").checked = false;
+  $("logSave").disabled = true;
   $("usbLog").style.display = "none";
   $("methodInfo").style.display = "none";
   $("modeRow").style.display = "none";
@@ -328,7 +330,7 @@ function usbResetUi(msg) {
 
 async function usbDisconnect() {
   const port = usbPort;
-  try { await usbSend("set log 0"); } catch (e) {}
+  // 動作ログはキーボード側に永続化されるので、切断時にoffにはしない
   try { if (usbReader) await usbReader.cancel(); } catch (e) {}
   try { if (usbWriter) usbWriter.releaseLock(); } catch (e) {}
   try { if (port) await port.close(); } catch (e) {}
@@ -379,7 +381,23 @@ function usbApplyResponse(line) {
   const rthumbM = line.match(/rthumb=(\w+)/);
   if (lthumbM && [...$("lthumb").options].some(o => o.value === lthumbM[1])) $("lthumb").value = lthumbM[1];
   if (rthumbM && [...$("rthumb").options].some(o => o.value === rthumbM[1])) $("rthumb").value = rthumbM[1];
-  $("usbState").innerHTML = '<span class="ok">✅ 反映・保存済み: ' + line.replace(/^ok /, "") + "</span>";
+  // 動作ログが永続オンで保存されている場合はトグルと表示を同期
+  const logM = line.match(/log=([01])/);
+  if (logM && logM[1] === "1") { $("logToggle").checked = true; $("usbLog").style.display = "block"; }
+  // 前回起動のリセット理由 (新ファームのみ)。watchdog/lockup/brownout はクラッシュ疑い
+  const bootM = line.match(/boot=0x([0-9a-fA-F]+)/);
+  let bootHtml = "";
+  if (bootM) {
+    const c = parseInt(bootM[1], 16);
+    const names = [[0x10, "watchdog（ハング/クラッシュの疑い）"], [0x100, "lockup（HardFaultの疑い）"],
+      [0x04, "brownout（電源低下）"], [0x02, "software（ソフト再起動）"],
+      [0x01, "pin（リセットボタン）"], [0x08, "power-on（電源投入）"], [0x80, "wake（スリープ復帰）"]];
+    const hit = names.find(([b]) => (c & b) !== 0);
+    const label = hit ? hit[1] : ("不明(0x" + bootM[1] + ")");
+    const warn = (c & 0x114) !== 0;
+    bootHtml = '<br>前回の起動理由: <span class="' + (warn ? "err" : "") + '">' + label + "</span>";
+  }
+  $("usbState").innerHTML = '<span class="ok">✅ 反映・保存済み: ' + line.replace(/^ok /, "") + "</span>" + bootHtml;
 }
 
 async function usbReadLoop(reader) {
@@ -422,6 +440,7 @@ $("usbBtn").onclick = async () => {
     $("usbBtn").textContent = "切断";
     $("usbState").textContent = "接続しました。現在値を取得中...";
     $("logToggle").disabled = false;
+    $("logSave").disabled = false;
     usbGotReply = false;
     await usbSend("get");
     setTimeout(() => {
@@ -452,6 +471,19 @@ $("logToggle").addEventListener("change", () => {
   $("usbLog").style.display = on ? "block" : "none";
   if (on) $("usbLog").textContent = "";
   usbSend("set log " + (on ? 1 : 0));
+});
+
+// 表示中のログを .log ファイルとして保存（原因調査用。ms時刻の巻き戻り=再起動の痕跡）
+$("logSave").addEventListener("click", () => {
+  const blob = new Blob([$("usbLog").textContent], { type: "text/plain" });
+  const a = document.createElement("a");
+  const now = new Date();
+  const pad = n => String(n).padStart(2, "0");
+  a.href = URL.createObjectURL(blob);
+  a.download = "nicola-log-" + now.getFullYear() + pad(now.getMonth() + 1) + pad(now.getDate())
+    + "-" + pad(now.getHours()) + pad(now.getMinutes()) + pad(now.getSeconds()) + ".log";
+  a.click();
+  URL.revokeObjectURL(a.href);
 });
 
 // ---- 設定のエクスポート/インポート (JSON) ----

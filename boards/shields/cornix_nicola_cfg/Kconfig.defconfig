@@ -3,4 +3,8 @@ if SHIELD_CORNIX_NICOLA_CFG
 config UART_INTERRUPT_DRIVEN
     default y
 
+# 起動時のリセット理由 (watchdog/lockup/brownout等) を get の boot= で照会するために有効化
+config HWINFO
+    default y
+
 endif

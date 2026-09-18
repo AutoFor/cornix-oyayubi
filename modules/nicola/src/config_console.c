@@ -3,13 +3,18 @@
  *
  * キーボード側dtsで chosen "zmk,nicola-cfg-uart" にCDC-ACMノードを指定すると
  * 有効になる。行単位のテキストプロトコル:
- *   get                 -> ok timeout=50 range=-1 mode=0 cont=0 log=0 lthumb=SPACE rthumb=INT4
+ *   get                 -> ok timeout=50 range=-1 mode=0 cont=0 log=0 lthumb=SPACE rthumb=INT4 boot=0x00
  *   set timeout 60      -> ok ...   (即時反映+フラッシュ保存)
  *   set range 65        -> ok ...
  *   set cont 1          -> ok ...
+ *   set log 1           -> ok ...   (動作ログのストリーム。永続: 次回起動後も有効)
  *   set lthumb SPACE    -> ok ...   (単独タップ時の送出キー。判定対象キーの物理位置は変わらない)
  *   set rthumb INT4     -> ok ...   (使えるキー名は nc_keynames を参照)
  *   reset               -> ok reset        (保存値を消去、再起動で既定値)
+ *
+ * boot= は前回起動のリセット理由 (hwinfo、CONFIG_HWINFO有効時)。pin/watchdog/
+ * lockup/brownout/software/power-on 等。クラッシュ頻発の切り分け用。
+ * ログ行の形式は "NC <起動からのms> <内容>"。
  *
  * SPDX-License-Identifier: GPL-2.0-or-later
  */
@@ -19,6 +24,9 @@
 #include <zephyr/devicetree.h>
 #include <zephyr/drivers/uart.h>
 #include <zephyr/logging/log.h>
+#if IS_ENABLED(CONFIG_HWINFO)
+#include <zephyr/drivers/hwinfo.h>
+#endif
 #if IS_ENABLED(CONFIG_SETTINGS)
 #include <zephyr/settings/settings.h>
 #endif
@@ -69,6 +77,38 @@ static char rx_line[LINE_MAX];
 static size_t rx_len;
 static char pending_line[LINE_MAX];
 
+/* 前回起動のリセット理由 (hwinfo)。get の boot= フィールドで照会できる */
+static uint32_t nc_boot_cause;
+
+static const char *nc_cause_str(uint32_t c) {
+#if IS_ENABLED(CONFIG_HWINFO)
+    if (c & RESET_WATCHDOG) {
+        return "watchdog";
+    }
+    if (c & RESET_CPU_LOCKUP) {
+        return "lockup";
+    }
+    if (c & RESET_BROWNOUT) {
+        return "brownout";
+    }
+    if (c & RESET_SOFTWARE) {
+        return "software";
+    }
+    if (c & RESET_PIN) {
+        return "pin";
+    }
+    if (c & RESET_POR) {
+        return "power-on";
+    }
+    if (c & RESET_LOW_POWER_WAKE) {
+        return "wake";
+    }
+#else
+    ARG_UNUSED(c);
+#endif
+    return "n/a";
+}
+
 static void respond(const char *s) {
     for (; *s != '\0'; s++) {
         uart_poll_out(cfg_uart, *s);
@@ -76,9 +116,11 @@ static void respond(const char *s) {
 }
 
 static void nc_format_status(char *buf, size_t buf_size, const struct nc_settings *s) {
-    snprintf(buf, buf_size, "ok timeout=%d range=%d mode=%d cont=%d log=%d lthumb=%s rthumb=%s\n",
+    snprintf(buf, buf_size,
+             "ok timeout=%d range=%d mode=%d cont=%d log=%d lthumb=%s rthumb=%s boot=0x%02x\n",
              s->timeout_ms, s->range_pct, s->mode, (int)s->cont, (int)s->log,
-             nc_keyname_from_code(s->lthumb_tap), nc_keyname_from_code(s->rthumb_tap));
+             nc_keyname_from_code(s->lthumb_tap), nc_keyname_from_code(s->rthumb_tap),
+             nc_boot_cause);
 }
 
 static void handle_line(struct k_work *work) {
@@ -153,6 +195,13 @@ static void uart_cb(const struct device *dev, void *user_data) {
 static void console_log_sink(const char *line) { respond(line); }
 
 static int nicola_console_init(void) {
+#if IS_ENABLED(CONFIG_HWINFO)
+    /* リセット理由を取得してクリア (nRF52のRESETREASはソフトリセットを跨いで残る) */
+    if (hwinfo_get_reset_cause(&nc_boot_cause) != 0) {
+        nc_boot_cause = 0;
+    }
+    hwinfo_clear_cause();
+#endif
 #if IS_ENABLED(CONFIG_SETTINGS)
     /* 保存済み設定を反映 (keymap既定値の後に上書き) */
     settings_load_subtree("nicola");
@@ -164,7 +213,12 @@ static int nicola_console_init(void) {
     uart_irq_callback_set(cfg_uart, uart_cb);
     uart_irq_rx_enable(cfg_uart);
     nc_cfg_set_log_sink(console_log_sink);
-    LOG_INF("NICOLA config console ready");
+    LOG_INF("NICOLA config console ready (boot reset_cause=0x%02x)", nc_boot_cause);
+    /* ホスト接続中の再起動ならこの行がストリームに残る (非接続時は捨てられる) */
+    char bootline[80];
+    snprintf(bootline, sizeof(bootline), "NC 0 boot reset_cause=0x%02x (%s)\n", nc_boot_cause,
+             nc_cause_str(nc_boot_cause));
+    respond(bootline);
     return 0;
 }
 

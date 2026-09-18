@@ -19,6 +19,7 @@
 #define DT_DRV_COMPAT zmk_behavior_nicola
 
 #include <zephyr/device.h>
+#include <zephyr/kernel.h>
 #include <drivers/behavior.h>
 #include <zephyr/logging/log.h>
 
@@ -40,18 +41,23 @@
 
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
-/* ---- 動作ログのストリーム出力 (Web設定ツールの表示用、set log 1 で有効) ---- */
+/* ---- 動作ログのストリーム出力 (Web設定ツールの表示用、set log 1 で有効・永続) ---- */
 static bool nc_log_on = false;
 static nc_log_sink_t nc_log_sink = NULL;
 
 void nc_cfg_set_log_sink(nc_log_sink_t sink) { nc_log_sink = sink; }
 
+/* 全行を "NC <ms> <msg>" 形式にする。<ms> は起動からの経過msで、再起動すると0に
+ * 巻き戻るため、PC側に保存したログ上でもクラッシュ/再起動の発生位置が特定できる。
+ * 呼び出し側のメッセージには "NC " を付けないこと。 */
 static void nc_emit(const char *fmt, ...) {
+    char msg[84];
     char buf[112];
     va_list ap;
     va_start(ap, fmt);
-    vsnprintf(buf, sizeof(buf) - 2, fmt, ap);
+    vsnprintf(msg, sizeof(msg), fmt, ap);
     va_end(ap);
+    snprintf(buf, sizeof(buf) - 2, "NC %u %s", (unsigned)k_uptime_get_32(), msg);
     LOG_INF("%s", buf);
     if (nc_log_on && nc_log_sink != NULL) {
         strcat(buf, "\n");
@@ -216,7 +222,7 @@ static void nc_type_with(int64_t ts, bool lsh, bool rsh) {
             continue;
         }
         const char *out = lsh ? m->l : (rsh ? m->r : m->t);
-        nc_emit("NC out '%s' plane=%c (key '%s')", out, lsh ? 'L' : (rsh ? 'R' : '-'), m->t);
+        nc_emit("out '%s' plane=%c (key '%s')", out, lsh ? 'L' : (rsh ? 'R' : '-'), m->t);
         nc_send_romaji(out, ts);
     }
     nc_chrcount = 0;
@@ -242,7 +248,7 @@ static void nc_judge_resolve(int64_t end_ts) {
     const int64_t total = end_ts - nc_last_chr_ts;
     const int64_t pos = nc_judge_ts - nc_last_chr_ts;
     const bool simul = (total <= 0) || (pos * 100 <= total * nc_range_pct);
-    nc_emit("NC judge %cthumb: pos=%dms / total=%dms = %d%% (range=%d%%) -> %s",
+    nc_emit("judge %cthumb: pos=%dms / total=%dms = %d%% (range=%d%%) -> %s",
             judge == 1 ? 'L' : 'R', (int32_t)pos, (int32_t)total,
             total > 0 ? (int32_t)(pos * 100 / total) : 0, nc_range_pct,
             simul ? "SIMUL" : "LATE(single)");
@@ -303,21 +309,21 @@ static int on_nicola_pressed(struct zmk_behavior_binding *binding,
                 if (nc_judge == 0) {
                     nc_judge = 1;
                     nc_judge_ts = ts;
-                    nc_emit("NC Lthumb dn: +%dms after char, judge pending",
+                    nc_emit("Lthumb dn: +%dms after char, judge pending",
                             (int32_t)(ts - nc_last_chr_ts));
                 }
             } else { /* ms方式: 窓を外れた保留文字は先に単独打ちで確定 */
                 const int32_t dt = (int32_t)(ts - nc_last_chr_ts);
                 if (dt > nc_timeout_ms) {
-                    nc_emit("NC Lthumb dn: dt=%dms > win=%dms -> LATE (type single first)", dt,
+                    nc_emit("Lthumb dn: dt=%dms > win=%dms -> LATE (type single first)", dt,
                             nc_timeout_ms);
                     nc_type(ts);
                 } else {
-                    nc_emit("NC Lthumb dn: dt=%dms <= win=%dms -> SIMUL", dt, nc_timeout_ms);
+                    nc_emit("Lthumb dn: dt=%dms <= win=%dms -> SIMUL", dt, nc_timeout_ms);
                 }
             }
         } else {
-            nc_emit("NC Lthumb dn (no pending char)");
+            nc_emit("Lthumb dn (no pending char)");
         }
         nc_l_held = true;
         nc_l_used = false;
@@ -335,21 +341,21 @@ static int on_nicola_pressed(struct zmk_behavior_binding *binding,
                 if (nc_judge == 0) {
                     nc_judge = 2;
                     nc_judge_ts = ts;
-                    nc_emit("NC Rthumb dn: +%dms after char, judge pending",
+                    nc_emit("Rthumb dn: +%dms after char, judge pending",
                             (int32_t)(ts - nc_last_chr_ts));
                 }
             } else {
                 const int32_t dt = (int32_t)(ts - nc_last_chr_ts);
                 if (dt > nc_timeout_ms) {
-                    nc_emit("NC Rthumb dn: dt=%dms > win=%dms -> LATE (type single first)", dt,
+                    nc_emit("Rthumb dn: dt=%dms > win=%dms -> LATE (type single first)", dt,
                             nc_timeout_ms);
                     nc_type(ts);
                 } else {
-                    nc_emit("NC Rthumb dn: dt=%dms <= win=%dms -> SIMUL", dt, nc_timeout_ms);
+                    nc_emit("Rthumb dn: dt=%dms <= win=%dms -> SIMUL", dt, nc_timeout_ms);
                 }
             }
         } else {
-            nc_emit("NC Rthumb dn (no pending char)");
+            nc_emit("Rthumb dn (no pending char)");
         }
         nc_r_held = true;
         nc_r_used = false;
@@ -368,11 +374,12 @@ static int on_nicola_pressed(struct zmk_behavior_binding *binding,
         } else if (nc_chrcount > 0) {
             /* ロールオーバー: 直前の文字だけ確定する。新しい文字は即確定せず
              * 保留に残し、自分の判定窓(親指の後到着)を持たせる */
+            nc_emit("dn '%s': rollover -> commit prev char", nc_name(key));
             nc_type(ts);
         }
         nc_chrcount = 0;
         nc_buf[nc_chrcount++] = key;
-        nc_emit("NC dn '%s' pend=%d L=%d R=%d", nc_name(key), nc_chrcount, (int)nc_l_held,
+        nc_emit("dn '%s' pend=%d L=%d R=%d", nc_name(key), nc_chrcount, (int)nc_l_held,
                 (int)nc_r_held);
         nc_last_chr_ts = ts;
         nc_recount();
@@ -418,10 +425,11 @@ static int on_nicola_released(struct zmk_behavior_binding *binding,
 
     if (key == nc_lthumb) {
         bool tap = !nc_l_used && nc_chrcount == 0;
+        nc_emit("Lthumb up (used=%d pend=%d)%s", (int)nc_l_used, nc_chrcount,
+                tap ? " -> solo tap" : "");
         nc_l_held = false;
         nc_l_used = false;
         if (tap) {
-            nc_emit("NC Lthumb up -> solo tap");
             nc_tap(nc_lthumb_tap, ts); /* 単独タップ送出 (既定Space、set lthumbで変更可) */
         }
         /* 親指releaseでは保留文字を確定しない (正本: 区間終端は文字release/次キー押下) */
@@ -430,10 +438,11 @@ static int on_nicola_released(struct zmk_behavior_binding *binding,
     }
     if (key == nc_rthumb) {
         bool tap = !nc_r_used && nc_chrcount == 0;
+        nc_emit("Rthumb up (used=%d pend=%d)%s", (int)nc_r_used, nc_chrcount,
+                tap ? " -> solo tap" : "");
         nc_r_held = false;
         nc_r_used = false;
         if (tap) {
-            nc_emit("NC Rthumb up -> solo tap");
             nc_tap(nc_rthumb_tap, ts); /* 単独タップ送出 (既定変換、set rthumbで変更可) */
         }
         /* 親指releaseでは保留文字を確定しない (正本: 区間終端は文字release/次キー押下) */
@@ -447,10 +456,14 @@ static int on_nicola_released(struct zmk_behavior_binding *binding,
          * (やまぶきR正本: 区間終端は「その文字を放す」か「別のキーを押す」) */
         if (nc_chrcount > 0 && nc_buf[0] == key) {
             if (nc_judge != 0) { /* %方式: 文字キーrelease = インターバル終端で判定 */
+                nc_emit("up '%s' -> interval end", nc_name(key));
                 nc_judge_resolve(ts);
             } else { /* 単独打鍵: releaseで確定 */
+                nc_emit("up '%s' -> commit (own release)", nc_name(key));
                 nc_type(ts);
             }
+        } else {
+            nc_emit("up '%s' (already committed)", nc_name(key));
         }
         return ZMK_BEHAVIOR_OPAQUE;
     }
@@ -549,7 +562,7 @@ int nc_cfg_set(const char *key, int32_t value) {
 #if IS_ENABLED(CONFIG_SETTINGS)
         settings_save_one("nicola/tmo", &nc_timeout_ms, sizeof(nc_timeout_ms));
 #endif
-        nc_emit("NC cfg: timeout=%dms (saved)", nc_timeout_ms);
+        nc_emit("cfg: timeout=%dms (saved)", nc_timeout_ms);
         return 0;
     }
     if (strcmp(key, "range") == 0) {
@@ -557,7 +570,7 @@ int nc_cfg_set(const char *key, int32_t value) {
 #if IS_ENABLED(CONFIG_SETTINGS)
         settings_save_one("nicola/rng", &nc_range_pct, sizeof(nc_range_pct));
 #endif
-        nc_emit("NC cfg: range=%d%% (saved)", nc_range_pct);
+        nc_emit("cfg: range=%d%% (saved)", nc_range_pct);
         return 0;
     }
     if (strcmp(key, "mode") == 0) {
@@ -566,7 +579,7 @@ int nc_cfg_set(const char *key, int32_t value) {
 #if IS_ENABLED(CONFIG_SETTINGS)
         settings_save_one("nicola/mod", &nc_mode, sizeof(nc_mode));
 #endif
-        nc_emit("NC cfg: mode=%s (saved)", nc_mode ? "pct(yamabuki)" : "ms");
+        nc_emit("cfg: mode=%s (saved)", nc_mode ? "pct(yamabuki)" : "ms");
         return 0;
     }
     if (strcmp(key, "cont") == 0) {
@@ -575,11 +588,16 @@ int nc_cfg_set(const char *key, int32_t value) {
         uint8_t v = nc_cont ? 1 : 0;
         settings_save_one("nicola/cnt", &v, sizeof(v));
 #endif
-        nc_emit("NC cfg: cont=%d (saved)", (int)nc_cont);
+        nc_emit("cfg: cont=%d (saved)", (int)nc_cont);
         return 0;
     }
-    if (strcmp(key, "log") == 0) { /* 動作ログのストリーム (非永続) */
+    if (strcmp(key, "log") == 0) { /* 動作ログのストリーム (永続: 次回起動後も有効) */
         nc_log_on = value != 0;
+#if IS_ENABLED(CONFIG_SETTINGS)
+        uint8_t v = nc_log_on ? 1 : 0;
+        settings_save_one("nicola/log", &v, sizeof(v));
+#endif
+        nc_emit("cfg: log=%d (saved)", (int)nc_log_on);
         return 0;
     }
     if (strcmp(key, "lthumb") == 0) {
@@ -587,7 +605,7 @@ int nc_cfg_set(const char *key, int32_t value) {
 #if IS_ENABLED(CONFIG_SETTINGS)
         settings_save_one("nicola/lta", &nc_lthumb_tap, sizeof(nc_lthumb_tap));
 #endif
-        nc_emit("NC cfg: lthumb tap=%u (saved)", nc_lthumb_tap);
+        nc_emit("cfg: lthumb tap=%u (saved)", nc_lthumb_tap);
         return 0;
     }
     if (strcmp(key, "rthumb") == 0) {
@@ -595,7 +613,7 @@ int nc_cfg_set(const char *key, int32_t value) {
 #if IS_ENABLED(CONFIG_SETTINGS)
         settings_save_one("nicola/rta", &nc_rthumb_tap, sizeof(nc_rthumb_tap));
 #endif
-        nc_emit("NC cfg: rthumb tap=%u (saved)", nc_rthumb_tap);
+        nc_emit("cfg: rthumb tap=%u (saved)", nc_rthumb_tap);
         return 0;
     }
     return -EINVAL;
@@ -609,8 +627,9 @@ void nc_cfg_reset(void) {
     settings_delete("nicola/cnt");
     settings_delete("nicola/lta");
     settings_delete("nicola/rta");
+    settings_delete("nicola/log");
 #endif
-    nc_emit("NC cfg: saved settings cleared");
+    nc_emit("cfg: saved settings cleared");
 }
 
 #if IS_ENABLED(CONFIG_SETTINGS)
@@ -619,36 +638,43 @@ static int nicola_settings_set(const char *name, size_t len, settings_read_cb re
     if (settings_name_steq(name, "tmo", NULL) && len == sizeof(nc_timeout_ms)) {
         read_cb(cb_arg, &nc_timeout_ms, len);
         nc_timeout_ms = CLAMP(nc_timeout_ms, 1, 1000);
-        nc_emit("NC cfg loaded: timeout=%dms", nc_timeout_ms);
+        nc_emit("cfg loaded: timeout=%dms", nc_timeout_ms);
         return 0;
     }
     if (settings_name_steq(name, "rng", NULL) && len == sizeof(nc_range_pct)) {
         read_cb(cb_arg, &nc_range_pct, len);
         nc_range_pct = CLAMP(nc_range_pct, 1, 100);
-        nc_emit("NC cfg loaded: range=%d%%", nc_range_pct);
+        nc_emit("cfg loaded: range=%d%%", nc_range_pct);
         return 0;
     }
     if (settings_name_steq(name, "mod", NULL) && len == sizeof(nc_mode)) {
         read_cb(cb_arg, &nc_mode, len);
         nc_mode = nc_mode != 0 ? 1 : 0;
-        nc_emit("NC cfg loaded: mode=%s", nc_mode ? "pct" : "ms");
+        nc_emit("cfg loaded: mode=%s", nc_mode ? "pct" : "ms");
         return 0;
     }
     if (settings_name_steq(name, "cnt", NULL) && len == 1) {
         uint8_t v;
         read_cb(cb_arg, &v, 1);
         nc_cont = v != 0;
-        nc_emit("NC cfg loaded: cont=%d", (int)nc_cont);
+        nc_emit("cfg loaded: cont=%d", (int)nc_cont);
         return 0;
     }
     if (settings_name_steq(name, "lta", NULL) && len == sizeof(nc_lthumb_tap)) {
         read_cb(cb_arg, &nc_lthumb_tap, len);
-        nc_emit("NC cfg loaded: lthumb tap=%u", nc_lthumb_tap);
+        nc_emit("cfg loaded: lthumb tap=%u", nc_lthumb_tap);
         return 0;
     }
     if (settings_name_steq(name, "rta", NULL) && len == sizeof(nc_rthumb_tap)) {
         read_cb(cb_arg, &nc_rthumb_tap, len);
-        nc_emit("NC cfg loaded: rthumb tap=%u", nc_rthumb_tap);
+        nc_emit("cfg loaded: rthumb tap=%u", nc_rthumb_tap);
+        return 0;
+    }
+    if (settings_name_steq(name, "log", NULL) && len == 1) {
+        uint8_t v;
+        read_cb(cb_arg, &v, 1);
+        nc_log_on = v != 0;
+        nc_emit("cfg loaded: log=%d", (int)nc_log_on);
         return 0;
     }
     return -ENOENT;
