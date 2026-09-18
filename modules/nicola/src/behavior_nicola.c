@@ -8,7 +8,9 @@
  * 原典からの拡張:
  *  - 連続シフト(オプション, continuous-shift): 親指キーの物理押下状態を別管理し、
  *    オンの場合は解決後も押下中はシフトを維持する (既定オフ)
- *  - 親指キー単独タップ: そのキー自身を送出 (既定: 左=Space / 右=変換(INT4)、DTで変更可)
+ *  - 親指キー単独タップ: そのキー自身を送出 (既定: 左=Space / 右=変換(INT4)、DTで変更可)。
+ *    ただし同時打鍵判定に関与した押下(成立/不成立問わず)は単独タップを出さない
+ *    (判定失敗のたびにSpace/変換=IME変換が漏れて表示を壊すのを防ぐ)
  *  - Ctrl/Alt/GUI 押下中は素のキーコードを送出（ショートカット素通し）
  *  - ロールオーバー: 次の文字キー押下時は直前の文字だけ確定し、新しい文字は
  *    自分の判定窓を持って保留に残す (やまぶきRの後判定と同じ扱い)
@@ -147,6 +149,10 @@ static int nc_chrcount;             /* 文字キーのカウンタ */
 static int nc_keycount;             /* 親指キーも含めたカウンタ */
 static bool nc_l_held, nc_r_held;   /* 親指キーの物理押下状態 */
 static bool nc_l_used, nc_r_used;   /* この押下中に同時打鍵が成立したか */
+/* この押下が保留文字の同時打鍵判定に関与したか (成立/不成立を問わない)。
+ * 関与した親指は「シフトのつもりで押された」ものなので、離しても単独タップ
+ * (Space/変換)を出さない。出すとIMEで変換が走り、ミス表示をさらに壊す */
+static bool nc_l_judged, nc_r_judged;
 
 /* 修飾キー押下中に素通ししたキー (releaseも素通しするため記録) */
 static uint32_t nc_raw[NC_BUF_MAX];
@@ -279,6 +285,7 @@ static void nc_reset(void) {
     nc_keycount = 0;
     nc_l_held = nc_r_held = false;
     nc_l_used = nc_r_used = false;
+    nc_l_judged = nc_r_judged = false;
     nc_raw_n = 0;
     nc_judge = 0;
 }
@@ -305,6 +312,7 @@ static int on_nicola_pressed(struct zmk_behavior_binding *binding,
 
     if (key == nc_lthumb) {
         if (nc_chrcount > 0) {
+            nc_l_judged = true; /* 保留文字と競合: この押下は単独タップにしない */
             if (nc_mode == 1) { /* %方式: 判定はインターバル終端まで保留 */
                 if (nc_judge == 0) {
                     nc_judge = 1;
@@ -337,6 +345,7 @@ static int on_nicola_pressed(struct zmk_behavior_binding *binding,
     }
     if (key == nc_rthumb) {
         if (nc_chrcount > 0) {
+            nc_r_judged = true; /* 保留文字と競合: この押下は単独タップにしない */
             if (nc_mode == 1) {
                 if (nc_judge == 0) {
                     nc_judge = 2;
@@ -424,11 +433,12 @@ static int on_nicola_released(struct zmk_behavior_binding *binding,
     }
 
     if (key == nc_lthumb) {
-        bool tap = !nc_l_used && nc_chrcount == 0;
-        nc_emit("Lthumb up (used=%d pend=%d)%s", (int)nc_l_used, nc_chrcount,
-                tap ? " -> solo tap" : "");
+        bool tap = !nc_l_used && !nc_l_judged && nc_chrcount == 0;
+        nc_emit("Lthumb up (used=%d judged=%d pend=%d)%s", (int)nc_l_used, (int)nc_l_judged,
+                nc_chrcount, tap ? " -> solo tap" : "");
         nc_l_held = false;
         nc_l_used = false;
+        nc_l_judged = false;
         if (tap) {
             nc_tap(nc_lthumb_tap, ts); /* 単独タップ送出 (既定Space、set lthumbで変更可) */
         }
@@ -437,11 +447,12 @@ static int on_nicola_released(struct zmk_behavior_binding *binding,
         return ZMK_BEHAVIOR_OPAQUE;
     }
     if (key == nc_rthumb) {
-        bool tap = !nc_r_used && nc_chrcount == 0;
-        nc_emit("Rthumb up (used=%d pend=%d)%s", (int)nc_r_used, nc_chrcount,
-                tap ? " -> solo tap" : "");
+        bool tap = !nc_r_used && !nc_r_judged && nc_chrcount == 0;
+        nc_emit("Rthumb up (used=%d judged=%d pend=%d)%s", (int)nc_r_used, (int)nc_r_judged,
+                nc_chrcount, tap ? " -> solo tap" : "");
         nc_r_held = false;
         nc_r_used = false;
+        nc_r_judged = false;
         if (tap) {
             nc_tap(nc_rthumb_tap, ts); /* 単独タップ送出 (既定変換、set rthumbで変更可) */
         }
