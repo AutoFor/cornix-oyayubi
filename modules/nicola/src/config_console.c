@@ -200,7 +200,7 @@ static int nicola_console_init(void) {
     if (hwinfo_get_reset_cause(&nc_boot_cause) != 0) {
         nc_boot_cause = 0;
     }
-    hwinfo_clear_cause();
+    hwinfo_clear_reset_cause();
 #endif
 #if IS_ENABLED(CONFIG_SETTINGS)
     /* 保存済み設定を反映 (keymap既定値の後に上書き) */
