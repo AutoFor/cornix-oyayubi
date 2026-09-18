@@ -10,6 +10,8 @@
  *    オンの場合は解決後も押下中はシフトを維持する (既定オフ)
  *  - 親指キー単独タップ: そのキー自身を送出 (既定: 左=Space / 右=変換(INT4)、DTで変更可)
  *  - Ctrl/Alt/GUI 押下中は素のキーコードを送出（ショートカット素通し）
+ *  - ロールオーバー: 次の文字キー押下時は直前の文字だけ確定し、新しい文字は
+ *    自分の判定窓を持って保留に残す (やまぶきRの後判定と同じ扱い)
  *
  * SPDX-License-Identifier: GPL-2.0-or-later
  */
@@ -363,15 +365,18 @@ static int on_nicola_pressed(struct zmk_behavior_binding *binding,
     if (nc_find(key) != NULL) {
         if (nc_judge != 0) { /* %方式: 次キー押下 = 前の文字のインターバル終端 */
             nc_judge_resolve(ts);
+        } else if (nc_chrcount > 0) {
+            /* ロールオーバー: 直前の文字だけ確定する。新しい文字は即確定せず
+             * 保留に残し、自分の判定窓(親指の後到着)を持たせる */
+            nc_type(ts);
         }
-        if (nc_chrcount < NC_BUF_MAX) {
-            nc_buf[nc_chrcount++] = key;
-        }
+        nc_chrcount = 0;
+        nc_buf[nc_chrcount++] = key;
         nc_emit("NC dn '%s' pend=%d L=%d R=%d", nc_name(key), nc_chrcount, (int)nc_l_held,
                 (int)nc_r_held);
         nc_last_chr_ts = ts;
-        nc_keycount++;
-        if (nc_keycount > 1) { /* 2打目以降は即時確定 (親指先行ならシフト) */
+        nc_recount();
+        if (nc_l_eff() || nc_r_eff()) { /* 親指先行/連続シフト: 有効な親指があれば即時シフト確定 */
             nc_type(ts);
             if (nc_l_held) {
                 nc_l_used = true;
@@ -418,10 +423,8 @@ static int on_nicola_released(struct zmk_behavior_binding *binding,
         if (tap) {
             nc_emit("NC Lthumb up -> solo tap");
             nc_tap(nc_lthumb_tap, ts); /* 単独タップ送出 (既定Space、set lthumbで変更可) */
-        } else if (nc_chrcount > 0 && nc_judge == 0) {
-            /* %方式の判定待ち(judge!=0)は文字キーの終端まで持ち越す(やまぶきR正本準拠) */
-            nc_type(ts);
         }
+        /* 親指releaseでは保留文字を確定しない (正本: 区間終端は文字release/次キー押下) */
         nc_keycount = (nc_r_eff() ? 1 : 0) + nc_chrcount;
         return ZMK_BEHAVIOR_OPAQUE;
     }
@@ -432,18 +435,22 @@ static int on_nicola_released(struct zmk_behavior_binding *binding,
         if (tap) {
             nc_emit("NC Rthumb up -> solo tap");
             nc_tap(nc_rthumb_tap, ts); /* 単独タップ送出 (既定変換、set rthumbで変更可) */
-        } else if (nc_chrcount > 0 && nc_judge == 0) {
-            nc_type(ts);
         }
+        /* 親指releaseでは保留文字を確定しない (正本: 区間終端は文字release/次キー押下) */
         nc_keycount = (nc_l_eff() ? 1 : 0) + nc_chrcount;
         return ZMK_BEHAVIOR_OPAQUE;
     }
 
     if (nc_find(key) != NULL) {
-        if (nc_judge != 0) { /* %方式: 文字キーrelease = インターバル終端で判定 */
-            nc_judge_resolve(ts);
-        } else if (nc_chrcount > 0) { /* 単独打鍵: releaseで確定 */
-            nc_type(ts);
+        /* 確定するのは保留中の文字本人のreleaseのみ。ロールオーバーで
+         * 既に確定済みの文字のreleaseは無視する
+         * (やまぶきR正本: 区間終端は「その文字を放す」か「別のキーを押す」) */
+        if (nc_chrcount > 0 && nc_buf[0] == key) {
+            if (nc_judge != 0) { /* %方式: 文字キーrelease = インターバル終端で判定 */
+                nc_judge_resolve(ts);
+            } else { /* 単独打鍵: releaseで確定 */
+                nc_type(ts);
+            }
         }
         return ZMK_BEHAVIOR_OPAQUE;
     }
