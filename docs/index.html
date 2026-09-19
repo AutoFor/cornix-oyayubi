@@ -68,10 +68,17 @@
       <input type="checkbox" id="logToggle" disabled>
       <span>動作ログを表示（判定・出力かなを起動からのms時刻つきで表示。オンはキーボードに保存され常時有効）</span>
       <button class="ghost" id="logSave" disabled style="padding:6px 12px; font-size:12px">.logで保存</button>
+      <button class="ghost" id="logCopyAll" disabled style="padding:6px 12px; font-size:12px">結果+ログを一括コピー</button>
     </div>
-    <pre id="usbLog" style="display:none; max-height:220px; overflow-y:auto; background:var(--paper);
-      border:1px solid var(--edge); border-radius:8px; padding:10px 12px; font-size:12px;
-      line-height:1.6; margin:10px 0 0; white-space:pre-wrap;"></pre>
+    <div id="logWrap" style="display:none; flex-direction:row; gap:10px; margin-top:10px">
+      <pre id="usbLog" style="flex:1; min-width:0; max-height:260px; overflow-y:auto; background:var(--paper);
+        border:1px solid var(--edge); border-radius:8px; padding:10px 12px; font-size:12px;
+        line-height:1.6; margin:0; white-space:pre-wrap;"></pre>
+      <textarea id="typePad" placeholder="ここに試し打ちできます（右の結果とログを一括コピーできます）"
+        style="flex:1; min-width:0; height:260px; resize:vertical; font-family:inherit; font-size:14px;
+        border:1px solid var(--edge); border-radius:8px; padding:10px 12px;
+        background:var(--card); color:var(--ink);"></textarea>
+    </div>
   </div>
 
   <div class="card">
@@ -320,7 +327,8 @@ function usbResetUi(msg) {
   $("logToggle").disabled = true;
   $("logToggle").checked = false;
   $("logSave").disabled = true;
-  $("usbLog").style.display = "none";
+  $("logCopyAll").disabled = true;
+  $("logWrap").style.display = "none";
   $("methodInfo").style.display = "none";
   $("modeRow").style.display = "none";
   $("modeHint").style.display = "block";
@@ -383,7 +391,7 @@ function usbApplyResponse(line) {
   if (rthumbM && [...$("rthumb").options].some(o => o.value === rthumbM[1])) $("rthumb").value = rthumbM[1];
   // 動作ログが永続オンで保存されている場合はトグルと表示を同期
   const logM = line.match(/log=([01])/);
-  if (logM && logM[1] === "1") { $("logToggle").checked = true; $("usbLog").style.display = "block"; }
+  if (logM && logM[1] === "1") { $("logToggle").checked = true; $("logWrap").style.display = "flex"; }
   // 前回起動のリセット理由 (新ファームのみ)。watchdog/lockup/brownout はクラッシュ疑い
   const bootM = line.match(/boot=0x([0-9a-fA-F]+)/);
   let bootHtml = "";
@@ -441,6 +449,7 @@ $("usbBtn").onclick = async () => {
     $("usbState").textContent = "接続しました。現在値を取得中...";
     $("logToggle").disabled = false;
     $("logSave").disabled = false;
+    $("logCopyAll").disabled = false;
     usbGotReply = false;
     await usbSend("get");
     setTimeout(() => {
@@ -468,9 +477,21 @@ $("lthumb").addEventListener("change", () => usbSend("set lthumb " + $("lthumb")
 $("rthumb").addEventListener("change", () => usbSend("set rthumb " + $("rthumb").value));
 $("logToggle").addEventListener("change", () => {
   const on = $("logToggle").checked;
-  $("usbLog").style.display = on ? "block" : "none";
+  $("logWrap").style.display = on ? "flex" : "none";
   if (on) $("usbLog").textContent = "";
   usbSend("set log " + (on ? 1 : 0));
+});
+
+// タイピング結果とログをまとめてクリップボードへ（原因調査用に貼り付けてもらう用）
+$("logCopyAll").addEventListener("click", async () => {
+  const text = "== タイピング結果 ==\n" + $("typePad").value
+    + "\n\n== 動作ログ ==\n" + $("usbLog").textContent + "\n";
+  try {
+    await navigator.clipboard.writeText(text);
+    $("usbState").textContent = "タイピング結果とログをコピーしました。そのまま貼り付けてください";
+  } catch (e) {
+    $("usbState").innerHTML = '<span class="err">コピー失敗: ' + e.message + "</span>";
+  }
 });
 
 // 表示中のログを .log ファイルとして保存（原因調査用。ms時刻の巻き戻り=再起動の痕跡）
