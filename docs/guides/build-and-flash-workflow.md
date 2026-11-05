@@ -142,6 +142,18 @@ gh workflow run build.yml --repo AutoFor/zmk-keyboard-cornix --ref oyayubi
 1. **USB（推奨・確実）**: 左手をUSB-Cケーブルで接続 → Chrome/Edge で https://zmk.studio → USB
 2. **Bluetooth**: [デスクトップアプリ版](https://github.com/zmkfirmware/zmk-studio/releases) をインストールして接続
 
+### キーマップの書き出し/読み込み（AutoFor版 Web Studio）
+
+公式Studioには配置の保存・復元機能がないため、未マージの
+[zmkfirmware/zmk-studio#179](https://github.com/zmkfirmware/zmk-studio/pull/179)
+（portable keymap の Export / Load）を取り込んだWeb版を公開している。
+
+- URL: **https://autofor.github.io/zmk-studio/** （接続は公式Web版と同じくUSBのみ）
+- 左のレイヤー一覧の下に **Export keymap**（JSON保存）/ **Load keymap**（JSONを読み込んで書き込み）
+- ソース: [AutoFor/zmk-studio](https://github.com/AutoFor/zmk-studio) の `with-pr179` ブランチ（push で Pages へ自動デプロイ）
+- ⚠️ 自作ホールドタップ（`&tt_num` `&msl` など）は Studio から新規割当できないため、
+  Load で正しく戻らない可能性がある。Load の前に必ず Export で現状を保存しておく
+
 ### ⚠️ 重要: Studioの変更は .keymap より優先される
 
 Studio での変更はキーボード内のフラッシュに保存され、**以後 UF2 を焼き直しても

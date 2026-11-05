@@ -153,6 +153,7 @@ Cornix で親指シフト入力を実現するプロジェクトのモノレポ�
 | `docs/` `tools/` `firmware/` | 設計記録・Web設定ツール・書き込みスクリプト | cornix-oyayubi (元から) |
 
 - Web設定ツール: https://autofor.github.io/cornix-oyayubi/ （GitHub Pages, `docs/index.html`）
+- キー配置のGUI編集: https://autofor.github.io/zmk-studio/ （ZMK Studio + キーマップの書き出し/読み込み。[docs/guides](docs/guides/build-and-flash-workflow.md#zmk-studioguiでキーマップをリアルタイム変更)）
 - 書き込み: `tools/flash-cornix.ps1`（GitHub Actions の最新ビルドを取得して UF2 書き込み）
 - 上流キーボード定義の取り込み: `git remote add upstream https://github.com/hitsmaxft/zmk-keyboard-cornix && git fetch upstream && git merge upstream/main`
 
